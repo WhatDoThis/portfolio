@@ -1,0 +1,1178 @@
+<html>
+<head>
+    <base href="https://www.saramin.co.kr">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="robots" content="noindex,nofollow">
+    <title>이력서 보기</title>
+    <style type="text/css">
+        /* reset css */
+        html {
+            color: #000;
+            background: #fff
+        }
+
+        body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, blockquote, button {
+            margin: 0;
+            padding: 0
+        }
+
+        body {
+            width: 100%;
+            min-width: 1260px;
+            font-size: 13px;
+            color: #444;
+            font-family: "Malgun Gothic", dotum, gulim, sans-serif
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-size: 100%;
+            font-weight: normal;
+            margin: 0;
+            padding: 0
+        }
+
+        ol, ul, li {
+            list-style: none
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        th, td {
+            padding: 0;
+            margin: 0;
+        }
+
+        address, caption, cite, code, dfn, em, strong, th, var {
+            font-style: inherit;
+            font-weight: inherit
+        }
+
+        p {
+            margin: 0
+        }
+
+        strong {
+            font-weight: bold
+        }
+
+        caption, legend, .hidden, .blind {
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: -1000%;
+            z-index: -1;
+            width: 1px;
+            height: 1px;
+            font-size: 0;
+            line-height: 0
+        }
+
+        .print_wrap div, p, ul, td, input, a, span, em {
+            font-style: normal;
+            font-family: "Malgun Gothic", dotum, gulim, sans-serif;
+            word-break: break-all;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+<div class="print_wrap">
+    <table style="width:600px;">
+    <tr>
+        <td>
+            <table style="width:600px;">
+                <tr>
+                    <td style="width:500px">
+                        <table>
+                            <tr>
+                                <td style="color:#292e41;font-size:16px;font-weight:bold;word-break: break-all">
+                                    우해인                                </td>
+                                <td style="padding-left:8px;">
+                                    <span style="background:#f4f6fa;color:#475067;font-size:10px;font-weight:bold;word-break: break-all">
+                                        경력                                    </span>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td rowspan="3" style="width:53px;vertical-align:top;">
+						<span style="display:inline-block;width:53px;border:1px solid #eaedf4;overflow:hidden;">
+							<img width="53" height="75" alt="" src="https://www.saramin.co.kr/zf_user/persons/picture?idx=4628731|f725d234590dbf8253a81b73763505f45e4ad8030c1d8f8fe8e31ee20a639075" border="0" />						</span>
+                    </td>
+                </tr>
+                                    <tr>
+                        <td style="padding-top:8px;">
+                            <p style="color:#67738e;font-size:10px;line-height:24px;word-break: break-all">
+                                남, 1988 (38세)                            </p>
+                        </td>
+                    </tr>
+                                    <tr>
+                    <td style="padding-top:8px;">
+                        <table style="width:500px;color:#292e41;font-size:12px;word-break: break-all">
+                            <tr>
+                                <td style="width:166px;">whi21@naver.com</td>
+                                <td style="width:166px;">010-9871-4077</td>
+                                <td style="width:166px;">010-9871-4077</td>
+                            </tr>
+                                                            <tr>
+                                    <td colspan="3" style="color:#292e41;font-size:10px;word-break: break-all">(14548) 경기 부천시 원미구 중동로254번길</td>
+                                </tr>
+                                                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <!-- DashBoard -->
+    <tr>
+        <td style="padding-top:40px;">
+            <table style="width:600px;background:#f8fafc;">
+                <tr>
+                    <td style="padding:12px 0;vertical-align:top;">
+                        <table>
+                            <tr>
+                                                                    <td style="padding-left:12px;width:150px;vertical-align:top;">
+                                        <strong style="font-size:10px;color:#67738e;font-weight:bold;margin-bottom:4px;">경력</strong>
+                                        <p style="color:#292e41;font-size:10px;">총  4년 (재직중)<br>아이뱅크</p>
+                                    </td>
+                                                                        <td style="padding-left:12px;width:150px;vertical-align:top;border-left:1px solid #eaedf4;">
+                                        <strong style="font-size:10px;color:#67738e;font-weight:bold;margin-bottom:4px;">학력</strong>
+                                        <p style="color:#292e41;font-size:10px;">대학교(4년) 졸업<br>아주대학교</p>
+                                    </td>
+                                                                        <td style="padding-left:12px;width:150px;vertical-align:top;border-left:1px solid #eaedf4;">
+                                        <strong style="font-size:10px;color:#67738e;font-weight:bold;margin-bottom:4px;">희망연봉</strong>
+                                        <p style="color:#292e41;font-size:10px;">회사내규에 따름</p>
+                                    </td>
+                                                                        <td style="padding-left:12px;width:150px;vertical-align:top;border-left:1px solid #eaedf4;">
+                                        <strong style="font-size:10px;color:#67738e;font-weight:bold;margin-bottom:4px;">포트폴리오</strong>
+                                        <p style="color:#292e41;font-size:10px;"><span class="txt_top"><span class="emph">총 3건</span></span></p>
+                                    </td>
+                                                                </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>    <table style="width:600px;">
+        <tr>
+            <td style="padding-top:40px;">
+
+                <table style="width:600px;">
+                                            <tr>
+                            <td style="word-break:break-all;word-wrap:break-word">
+                                <p style="margin-top:14px;font-size:14px;color:#292e41;word-break: break-all">&quot;복잡한 시스템 환경에서도 신속하게 문제를 해결하는 백엔드 개발자의 도전!&quot;<br />
+<br />
+ 다년 간의 백엔드 및 서버 개발 경력을 바탕으로 다양한 솔루션 구축과 시스템 개발, 크로스 시스템 연동 프로젝트를 성공적으로 수행해 왔습니다.<br />
+아이뱅크 솔루션개발사업부에서 실무 경험을 쌓으며, 다양한 솔루션 시스템 연계를 능통하게 해내왔고, 주요 백엔드 프레임워크와 다양한 데이터베이스 환경에서 안정적인 서비스 운영을 이끌었습니다. 또한, RestAPI, JSON Web Token, NGINX, Redis, SQLAlchemy 등 최신 백엔드 기술을 적극적으로 도입하여 효율적인 시스템 아키텍처를 구현한 경험이 있습니다.<br />
+ 현재는 주로 하네스 엔지니어링을 통한 AI 활용 개발을 진행하며, 시스템/구조 기획 설계 구축까지 개발하고 서버나 각종 툴을 활용한 배포 및 안정화까지 구현해 내고 있습니다</p>                            </td>
+                        </tr>
+                                        </table>
+            </td>
+        </tr>
+    </table>
+        <!-- skill -->
+    <table style="width:600px;">
+                    <tr>
+                <td style="padding-top:40px;">
+                    <h3 style="font-size:16px;font-weight:bold;color:#292e41">나의 스킬</h3>
+                    <p style="line-height:43px;word-break: break-all">
+                                                    <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">selenium</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">CSS3</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">HTML5</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">SQL Developer</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">beautifulsoup</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">keras</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">SQLite</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">React</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">numpy</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">matplotlib</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">Django</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">Oracle</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">Oracle SQL</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">Kotlin</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">Pandas</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">TensorFlow</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">Python</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">jQuery</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">MyBatis</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">JavaScript</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">Spring Boot</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">JSP</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">Java</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">PostgreSQL</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">JSX</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">XML</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">Linux</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">JSON</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">JSON API</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">JSON Web Token</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">API</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">MCP</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">AITool</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">CursorAI</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">MariaDB</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">MySQL</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">RAG</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">프롬프트 엔지니어링</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">Starlette</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">NGINX</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">Claude API</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">Chart.js</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">HTTPx</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">Neo4j</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">pgvector</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">LangGraph</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">Redis</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">SQLAlchemy</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">Context Engineering</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">gensparkAI</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">백엔드/서버개발</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">Node.js</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">Vue.js</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">Git</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">ReactJS</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">풀스택</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">RestAPI</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">MongoDB</span>
+                                                        <span style="border:1px solid #d7dce5;padding:7px 11px;color:#475067;font-size:13px;word-break: break-all">Flutter</span>
+                                                </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                                    </td>
+            </tr>
+                </table>
+        <table style="width:600px;">
+        <tr>
+            <td style="padding-top:60px;"></td>
+        </tr>
+            <tr>
+        <td>
+            <table style="border-top:1px solid #8491a7;">
+                <tr>
+                    <td style="width:110px;vertical-align:top;">
+                        <h2 style="font-size:12px;margin-top:28px;word-break:break-all">경력</h2>
+                        <p style="margin-top:4px;font-size:10px;color:#67738e;word-break: break-all">
+                            <span>총 <em>4</em>년</span>                        </p>
+                                            </td>
+                    <td style="width:490px;vertical-align:top;padding-bottom:32px;">
+                        <table>
+                                                            <tr>
+                                    <td style="padding:28px 0;">
+                                        <table style="width:490px;">
+                                            <tr>
+                                                <td style="text-align:left;">
+                                                    <h3 style="font-size:12px;font-weight:bold;color:#292e41;word-break:break-all">아이뱅크</h3>
+                                                </td>
+                                                <td style="text-align:right;font-size:10px;color:#292e41;word-break: break-all">
+                                                    2023.06 ~ <span style="color:#2d65f2;">재직중</span>                                                </td>
+                                            </tr>
+                                                                                            <tr>
+                                                    <td colspan="2">
+                                                                                                                    <p style="margin:4px 0 12px 0;font-size:10px;color:#292e41;word-break:break-all">백엔드/서버개발 · 솔루션개발사업부&nbsp;/&nbsp;사원 2년차</p>
+                                                                                                                        <p style="margin:4px 0 12px 0;font-size:10px;color:#292e41;word-break:break-all">솔루션 구축 및 운영, 각종 시스템 개발, 크로스 시스템 연동 등</p>
+                                                                                                                </td>
+                                                </tr>
+                                                                                        </table>
+                                    </td>
+                                </tr>
+                                                                <tr>
+                                    <td style="padding:28px 0;border-top:1px solid #d7dce5;">
+                                        <table style="width:490px;">
+                                            <tr>
+                                                <td style="text-align:left;">
+                                                    <h3 style="font-size:12px;font-weight:bold;color:#292e41;word-break:break-all">플래너수학학원</h3>
+                                                </td>
+                                                <td style="text-align:right;font-size:10px;color:#292e41;word-break: break-all">
+                                                    2020.02 ~ 2022.08 · 2년 7개월                                                </td>
+                                            </tr>
+                                                                                            <tr>
+                                                    <td colspan="2">
+                                                                                                                    <p style="margin:4px 0 12px 0;font-size:10px;color:#292e41;word-break:break-all">운영팀&nbsp;/&nbsp;주임/팀원 3년차</p>
+                                                                                                                        <p style="margin:4px 0 12px 0;font-size:10px;color:#292e41;word-break:break-all">학원관리(비품, 공무 등), 각종 자료제작(간담회, 세미나, 마케팅, 스캔, 제본 등), 원생/원비/교재비 관리 등등</p>
+                                                                                                                        <table>
+                                                                                                                                    <tr>
+                                                                        <td style="width:100px;font-size:10px;vertical-align:top;">연봉</td>
+                                                                        <td style="width:10px;font-size:10px;color:#d7dce5;vertical-align:top;">|</td>
+                                                                        <td style="width:350px;font-size:10px;vertical-align:top;">3,360만원</td>
+                                                                    </tr>
+                                                                                                                                        <tr>
+                                                                        <td style="width:100px;font-size:10px;vertical-align:top;">근무지역</td>
+                                                                        <td style="width:10px;font-size:10px;color:#d7dce5;vertical-align:top;">|</td>
+                                                                        <td style="width:350px;font-size:10px;vertical-align:top;">경기</td>
+                                                                    </tr>
+                                                                                                                                        <tr>
+                                                                        <td style="width:100px;font-size:10px;vertical-align:top;">퇴사사유</td>
+                                                                        <td style="width:10px;font-size:10px;color:#d7dce5;vertical-align:top;">|</td>
+                                                                        <td style="width:350px;font-size:10px;vertical-align:top;">업직종 전환</td>
+                                                                    </tr>
+                                                                                                                                </table>
+                                                                                                                </td>
+                                                </tr>
+                                                                                        </table>
+                                    </td>
+                                </tr>
+                                                                <tr>
+                                    <td style="padding:28px 0;border-top:1px solid #d7dce5;">
+                                        <table style="width:490px;">
+                                            <tr>
+                                                <td style="text-align:left;">
+                                                    <h3 style="font-size:12px;font-weight:bold;color:#292e41;word-break:break-all">에듀플렉스</h3>
+                                                </td>
+                                                <td style="text-align:right;font-size:10px;color:#292e41;word-break: break-all">
+                                                    2018.10 ~ 2020.02 · 1년 5개월                                                </td>
+                                            </tr>
+                                                                                            <tr>
+                                                    <td colspan="2">
+                                                                                                                    <p style="margin:4px 0 12px 0;font-size:10px;color:#292e41;word-break:break-all">CM(Coaching Manager) Team&nbsp;/&nbsp;사원/팀원 3년차</p>
+                                                                                                                        <p style="margin:4px 0 12px 0;font-size:10px;color:#292e41;word-break:break-all">학습매니저 및 티칭매니저</p>
+                                                                                                                        <table>
+                                                                                                                                    <tr>
+                                                                        <td style="width:100px;font-size:10px;vertical-align:top;">연봉</td>
+                                                                        <td style="width:10px;font-size:10px;color:#d7dce5;vertical-align:top;">|</td>
+                                                                        <td style="width:350px;font-size:10px;vertical-align:top;">2,900만원</td>
+                                                                    </tr>
+                                                                                                                                        <tr>
+                                                                        <td style="width:100px;font-size:10px;vertical-align:top;">근무지역</td>
+                                                                        <td style="width:10px;font-size:10px;color:#d7dce5;vertical-align:top;">|</td>
+                                                                        <td style="width:350px;font-size:10px;vertical-align:top;">경기</td>
+                                                                    </tr>
+                                                                                                                                        <tr>
+                                                                        <td style="width:100px;font-size:10px;vertical-align:top;">퇴사사유</td>
+                                                                        <td style="width:10px;font-size:10px;color:#d7dce5;vertical-align:top;">|</td>
+                                                                        <td style="width:350px;font-size:10px;vertical-align:top;">근무조건</td>
+                                                                    </tr>
+                                                                                                                                </table>
+                                                                                                                </td>
+                                                </tr>
+                                                                                        </table>
+                                    </td>
+                                </tr>
+                                                                <tr>
+                                    <td style="padding:28px 0;border-top:1px solid #d7dce5;">
+                                        <table style="width:490px;">
+                                            <tr>
+                                                <td style="text-align:left;">
+                                                    <h3 style="font-size:12px;font-weight:bold;color:#292e41;word-break:break-all">전자부품연구원</h3>
+                                                </td>
+                                                <td style="text-align:right;font-size:10px;color:#292e41;word-break: break-all">
+                                                    2016.08 ~ 2018.02 · 1년 7개월                                                </td>
+                                            </tr>
+                                                                                            <tr>
+                                                    <td colspan="2">
+                                                                                                                    <p style="margin:4px 0 12px 0;font-size:10px;color:#292e41;word-break:break-all">나노소재부품연구센터&nbsp;/&nbsp;연구원 3년차</p>
+                                                                                                                        <p style="margin:4px 0 12px 0;font-size:10px;color:#292e41;word-break:break-all">THz 센서 설계 및 공정개발</p>
+                                                                                                                        <table>
+                                                                                                                                    <tr>
+                                                                        <td style="width:100px;font-size:10px;vertical-align:top;">연봉</td>
+                                                                        <td style="width:10px;font-size:10px;color:#d7dce5;vertical-align:top;">|</td>
+                                                                        <td style="width:350px;font-size:10px;vertical-align:top;">2,160만원</td>
+                                                                    </tr>
+                                                                                                                                        <tr>
+                                                                        <td style="width:100px;font-size:10px;vertical-align:top;">근무지역</td>
+                                                                        <td style="width:10px;font-size:10px;color:#d7dce5;vertical-align:top;">|</td>
+                                                                        <td style="width:350px;font-size:10px;vertical-align:top;">경기</td>
+                                                                    </tr>
+                                                                                                                                        <tr>
+                                                                        <td style="width:100px;font-size:10px;vertical-align:top;">퇴사사유</td>
+                                                                        <td style="width:10px;font-size:10px;color:#d7dce5;vertical-align:top;">|</td>
+                                                                        <td style="width:350px;font-size:10px;vertical-align:top;">업직종 전환</td>
+                                                                    </tr>
+                                                                                                                                </table>
+                                                                                                                </td>
+                                                </tr>
+                                                                                        </table>
+                                    </td>
+                                </tr>
+                                                                <tr>
+                                    <td style="padding:28px 0;border-top:1px solid #d7dce5;">
+                                        <table style="width:490px;">
+                                            <tr>
+                                                <td style="text-align:left;">
+                                                    <h3 style="font-size:12px;font-weight:bold;color:#292e41;word-break:break-all">이수엑사보드</h3>
+                                                </td>
+                                                <td style="text-align:right;font-size:10px;color:#292e41;word-break: break-all">
+                                                    2015.01 ~ 2016.02 · 1년 2개월                                                </td>
+                                            </tr>
+                                                                                            <tr>
+                                                    <td colspan="2">
+                                                                                                                    <p style="margin:4px 0 12px 0;font-size:10px;color:#292e41;word-break:break-all">생산파트, 연구개발파트&nbsp;/&nbsp;사원/팀원 2년차</p>
+                                                                                                                        <p style="margin:4px 0 12px 0;font-size:10px;color:#292e41;word-break:break-all">장비라인 유지보수 및 개선, 생산표준 및 QC공정도 관리, 작업자 환경개선, Cavity PCB개발, 임피던스 유효성 검증</p>
+                                                                                                                        <table>
+                                                                                                                                    <tr>
+                                                                        <td style="width:100px;font-size:10px;vertical-align:top;">연봉</td>
+                                                                        <td style="width:10px;font-size:10px;color:#d7dce5;vertical-align:top;">|</td>
+                                                                        <td style="width:350px;font-size:10px;vertical-align:top;">3,450만원</td>
+                                                                    </tr>
+                                                                                                                                        <tr>
+                                                                        <td style="width:100px;font-size:10px;vertical-align:top;">근무지역</td>
+                                                                        <td style="width:10px;font-size:10px;color:#d7dce5;vertical-align:top;">|</td>
+                                                                        <td style="width:350px;font-size:10px;vertical-align:top;">경기</td>
+                                                                    </tr>
+                                                                                                                                        <tr>
+                                                                        <td style="width:100px;font-size:10px;vertical-align:top;">퇴사사유</td>
+                                                                        <td style="width:10px;font-size:10px;color:#d7dce5;vertical-align:top;">|</td>
+                                                                        <td style="width:350px;font-size:10px;vertical-align:top;">업직종 전환</td>
+                                                                    </tr>
+                                                                                                                                </table>
+                                                                                                                </td>
+                                                </tr>
+                                                                                        </table>
+                                    </td>
+                                </tr>
+                                                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+<tr>
+    <td>
+        <table style="border-top:1px solid #8491a7;">
+            <tr>
+                <td style="width:110px;vertical-align:top;">
+                    <h2 style="font-size:12px;margin-top:28px;word-break:normal;">경력기술서</h2>
+                </td>
+                <td style="width:490px;vertical-align:top;padding-bottom:32px;">
+                    <table>
+                        <tr>
+                            <td style="padding:28px 0;">
+                                <table style="width:490px;">
+                                    <tr>
+                                        <td>
+                                            <p style="margin:4px 0 12px 0;font-size:10px;color:#292e41;word-break:break-all">[ 핵심 역량 요약 ]<br />
+<br />
+ Adobe Campaign Classic(v7/v8) / Adobe Target 구축 및 운영 3년 이상의 마케팅 솔루션 전문성에, LLM / RAG 기반 데이터 분석 시스템을 1인 풀스택으로 설계 및 배포한 AI 개발 역량을 결합한 백엔드 개발자.<br />
+<br />
+ 현재는 AI를 활용한 전체 시스템 / 구조 설계 및 제작과, 프롬프트 및 컨텍스트 엔지니어링(하네스 엔지니어링) 기준의 풀스택 작업을 주로 진행 중이며, 특정 솔루션에 국한되지 않은 멀티 솔루션 연동 개발도 수행.<br />
+<br />
+· 개발 방식<br />
+ - AI 에이전트 오케스트레이션 기반 개발 주도<br />
+ - 시스템 구조 및 개발 방향을 설계하고 Phase 단위로 분할<br />
+ - 역할별 에이전트(구현 / 리뷰 / 리팩토링 / QA) 파이프라인 구성<br />
+ - Phase별 디버깅 및 방향 수정을 통해 배포까지 전 과정 리딩<br />
+<br />
+· 솔루션 : Adobe Campaign Classic(v7/v8), Adobe Target, AEP Web SDK<br />
+· Backend : Python(FastAPI, Starlette), JSSP, JavaScript, XML, SQLAlchemy<br />
+· Frontend : React, JavaScript, HTML5, CSS3, Chart.js, Recharts<br />
+· Data/DB : PostgreSQL(pgvector), Oracle, MariaDB, Neo4j, Redis, ETL 설계<br />
+· AI : Claude API, Gemini Embedding, MCP, LangGraph, RAG, OpenRouter, Cursor AI, 컨텍스트 / 하네스 엔지니어링<br />
+· Infra : Rocky Linux, Nginx, systemd, Certbot, Git, JWT / bcrypt<br />
+<br />
+<br />
+[프로젝트 경험]<br />
+<br />
+[ LG 유플러스 Adobe Target / Adobe Campaign 구축 ]<br />
+<br />
+· 기간 : 2026.05 ~ 진행중<br />
+· 연계/소속 : LG 유플러스 / 아이뱅크<br />
+· 투입 인원 : 8명 (Cursor AI 활용)<br />
+· 주요 업무 : Adobe Target SDK 기반 Web/App 개인화 마케팅 환경을 구축하고, 자연어SQL 타겟 추출 LLM과 고객 맞춤 발송 피로도 제어 로직을 신규 개발<br />
+· 기술 스택 : Adobe Target, Adobe Campaign Classic, JavaScript, HTML, CSS, XML, JSSP, OpenRouter, AI API, Cursor AI<br />
+<br />
+· 상세 역할 내용<br />
+<br />
+1. Adobe Target 구축 및 클라이언트 사이드 개발<br />
+   1) SDK 기반 구현체 설계 및 배포 : Web/App 전 영역 개인화 기반 확보<br />
+   2) 시스템 간 API 연동 및 이벤트 트리거 개발<br />
+      - 고객 행동 데이터 수집 파라미터 정의 및 전달 규격 수립<br />
+      - 페이지 / 액션 단위 트리거 조건 설계<br />
+   3) 재사용 가능한 마케팅 컴포넌트 개발 : 캠페인별 중복 개발 제거<br />
+   4) 구축 산출물 표준화<br />
+      - WBS, 구축항목 체크리스트, 개발 가이드 문서 작성<br />
+<br />
+2. Adobe Campaign SQL 생성 LLM 개발 (OOTB 미제공 기능 신규 개발)<br />
+   1) 자연어(NL) 입력으로 대상 고객 추출 SQL을 생성하는 LLM 기능 설계<br />
+   2) 고객 데이터 스키마를 반영한 프롬프트 및 응답 검증 로직 구현<br />
+   3) 마케터의 타겟 추출 의존도를 낮추는 셀프서비스 구조 확보<br />
+      - 생성 결과의 솔루션 기능 자동 연동 처리<br />
+<br />
+3. 고객 맞춤 발송 피로도(Fatigue) 제어 로직 개발<br />
+   1) OOTB Typology(유형 규칙) 기반 제어의 제약을 보완하는 커스텀 로직 설계<br />
+   2) 고객 데이터 및 요구사항 기반 제어 기준 정의<br />
+      - 채널별 / 특정 영역별 발송 한도 및 우선순위 기준 적용<br />
+   3) 타겟팅 워크플로우에 공통 적용 가능한 형태로 모듈화<br />
+<br />
+<br />
+[ ACC BI Report - 노코드 데이터 분석 및 대시보드 플랫폼 개발 ]<br />
+<br />
+· 기간       : 2025.10 ~ 진행중<br />
+· 연계/소속  : 자체 프로젝트 / 아이뱅크<br />
+· 투입 인원  : 3명 (Cursor AI 활용)<br />
+· 주요 업무  : ETL / 노코드 쿼리 빌더 / 대시보드를 갖춘 마케팅 데이터 분석 플랫폼을 아키텍처 설계부터 서버 구축 및 운영까지 주도<br />
+· 기술 스택  : Python, FastAPI, React, PostgreSQL, Psycopg2, Pydantic, SQLAlchemy, Redis, Recharts, JavaScript, CSS3, Nginx, Rocky Linux, Git, JWT, bcrypt, httpx, Claude API, Cursor AI<br />
+<br />
+· 상세 역할 내용<br />
+<br />
+1. 시스템 설계 및 아키텍처<br />
+   1) 서비스 기획 : 고객 DB 구조, 시스템 DB 구조, 화면별 기능, 기술 스택 선정<br />
+   2) 데이터 모델 설계<br />
+      - 프로젝트(+ETL) &gt; 폴더 &gt; 유저(+세션) x 역할(권한 제어) 계층 구조<br />
+   3) 리소스 구조 설계<br />
+      - 대시보드 = 위젯 &lt; 쿼리 / 분석 테이블 마스터 &lt; 쿼리<br />
+   4) 패키지 아키텍처 설계<br />
+      - Backend / Frontend / Env / Docs 분류 및 하위 Tree 구조 정의<br />
+<br />
+2. 노코드 쿼리 빌더(분석 테이블) 개발<br />
+   1) 테이블 간 컬럼 상관관계 기반 다중 테이블 조인 UI 제공<br />
+   2) 비개발자도 피벗 형태의 집계 데이터를 직접 생성 가능한 구조 구현<br />
+<br />
+3. 대시보드 시스템 개발<br />
+   1) 데이터 로드 및 필터 : 기간, 집계기준, 컬럼 Multi-Select<br />
+   2) KPI 시스템 : 목표 설정, 지표 선택, 신호등 방식 달성도 시각화<br />
+   3) 발송 / 성공 현황판 및 기본 차트 자동 제공 (성공수 기준 상위 10개)<br />
+   4) 상세 데이터 조회 : 페이지네이션 및 컬럼 요소별 필터<br />
+   5) 위젯 시스템 : Bar, Line, Area, Pie, Radar, Scatter 차트 제작 및 저장<br />
+   6) 종합 리포트 페이지 : 저장 위젯 취합형 단일 시각 리포트 제공<br />
+<br />
+4. ETL 시스템 개발<br />
+   1) 데이터 유입 경로 이원화<br />
+      - 파일 업로드(Excel, Parquet 등) / 외부 DB 직접 연결<br />
+   2) 서버 사양 제약을 고려한 대용량 분산 이관 설계<br />
+      - 큐(Queue) 기반 작업 처리 및 배치 전략 적용<br />
+      - 리소스 한계 상황에 대한 제한 조건 및 실패 처리 정책 수립<br />
+<br />
+5. 인프라 및 형상관리<br />
+   1) Git 기반 형상관리 체계 수립<br />
+   2) 클라우드 Linux 환경 패키지 설치 및 가상환경 구성<br />
+   3) Nginx 리버스 프록시 및 systemd 서비스 설정<br />
+<br />
+<br />
+[ ACC BI Assistant - AI 기반 마케팅 성과 분석 시스템 개발 (1차 구축 ~ 2차 고도화) ] <br />
+<br />
+· 기간       : 2025.10 ~ 2026.02 (1차 구축 2025.10~2026.01 / 2차 고도화 2026.01~2026.02)<br />
+· 연계/소속  : 자체 프로젝트 / 아이뱅크<br />
+· 투입 인원  : 1명 (Cursor AI 활용)<br />
+· 주요 업무  : Adobe Campaign 발송 데이터를 자연어로 질의 및 시각화하는 RAG / MCP 기반 AI 분석 시스템을 1인 풀스택으로 설계, 개발, 운영<br />
+· 기술 스택  : Python, Starlette, Claude API(Sonnet 4), MCP, LangGraph, RAG, Gemini Embedding, PostgreSQL(pgvector), Neo4j, Redis, MariaDB, SQLAlchemy, JavaScript, HTML5, CSS3, Chart.js, Nginx, Rocky Linux, JWT, bcrypt, httpx, holidays, Cursor AI<br />
+<br />
+· 상세 역할 내용<br />
+<br />
+1. 시스템 아키텍처 설계<br />
+   1) 버전 단계별 아키텍처 진화 전략 수립 (1차 구축 &gt; 2차 고도화)<br />
+   2) AI 역할 분리 설계<br />
+      - LLM은 JSON 반환만 담당, 리포트 생성은 서버 엔진이 수행<br />
+   3) Cursor AI 활용 효율화를 위한 Context Document 4종 정립<br />
+      - 기술 스택 / 시스템 아이디어 / 아키텍처 / 개발 규약<br />
+<br />
+2. RAG 파이프라인 구축 (2차 고도화 핵심)<br />
+   1) Prompt Embedding 기반 2단계 가공 구조 설계<br />
+      - 1차 가공 프롬프트 생성<br />
+      - Gemini Embedding 모델 기반 RAG 검색<br />
+      - 2차 가공 후 Claude API 전달<br />
+   2) PostgreSQL pgvector 기반 임베딩 데이터 생성 및 저장 설계<br />
+   3) Neo4j 그래프DB로 Embedding / Filter / Chat-Log 관계 데이터 모델링<br />
+   4) 최종 응답 규격 정의<br />
+      - 리포트 타입 / 데이터 조회 쿼리 / 데이터 인사이트 3종 동시 반환<br />
+<br />
+3. MCP Tools 개발<br />
+   1) 핵심 데이터 조회 Tool 7종 구현 및 외부 MCP 서버 연동<br />
+   2) 다차원 통계 조회용 범용 Main Tool 개발<br />
+      - Tool 목록 최소화로 라우팅 정확도 확보<br />
+   3) 재사용 가능한 필터 조건 조합 세트 설계 (12가지 날짜 필터 옵션 포함)<br />
+   4) 응답 포맷을 리포트 생성용 데이터 구조로 직결하여 후처리 제거<br />
+<br />
+4. 리포트 생성 엔진 개발<br />
+   1) Chart.js 기반 차트 자동 생성 및 차트 생성 알고리즘 구현<br />
+   2) 페이지네이션 알고리즘 및 Y축 스케일링 알고리즘 자체 구현<br />
+   3) 조건 범용 대응이 가능한 차트 생성 포맷 표준화<br />
+<br />
+5. 성능 최적화 및 보안<br />
+   1) 성능 : Rate Limiting, LRU 캐싱(10분 TTL), 자동 재시도 로직<br />
+   2) 비용 : aggregations 구조 최적화를 통한 Token 사용량 절감<br />
+   3) 보안 : JWT 인증, HttpOnly 쿠키 세션 관리, bcrypt 해싱,<br />
+             사용자별 데이터 격리<br />
+<br />
+6. 인프라 구축 및 배포<br />
+   1) Rocky Linux 서버 구성 및 Nginx 리버스 프록시 설정<br />
+   2) systemd 기반 서비스 관리 및 무중단 운영 체계 구성<br />
+<br />
+<br />
+[ 삼성전자 마케팅 Adobe Campaign v7  v8 업그레이드 환경 구축 및 데이터 이관 ]<br />
+<br />
+· 기간 : 2025.05 ~ 2025.09<br />
+· 연계/소속 : 삼성전자 / 아이뱅크<br />
+· 투입 인원 : 5명 (기획 포함)<br />
+· 주요 업무 : 2020년부터 운영된 Adobe Campaign v7 환경을 v8로 전환하기 위한 신규 환경 구축, 전체 워크플로우 및 데이터 이관, 광고 플랫폼 API 연동 담당<br />
+· 기술 스택  : Adobe Campaign Classic v7/v8, XML, JSSP, JavaScript, HTML, Linux, PostgreSQL, Oracle<br />
+<br />
+· 상세 역할 내용<br />
+<br />
+1. V8 환경 구축 및 연계 시스템 정합성 확보<br />
+   1) V8 Campaign 환경 신규 구축<br />
+   2) V7에서 운영 중인 연계 시스템 전량 재연동 및 동작 검증<br />
+<br />
+2. 시스템 기능 및 데이터 이관<br />
+   1) 솔루션 내 데이터 워크플로우 전수 분석 : 이관 대상 및 의존관계 도출<br />
+   2) V7 시스템 기능 및 데이터 타겟팅 워크플로우 패키징<br />
+   3) V8 전체 이관 수행 및 버전 차이로 발생한 이슈 해결<br />
+      - v7 / v8 아키텍처 차이에 따른 동작 불일치 대응<br />
+      - 이관 실패 항목 원인 분석 및 재처리<br />
+   4) 스키마 제작 및 해당 데이터 이관<br />
+<br />
+3. 검수 및 API 개발<br />
+   1) 전체 이관 항목 검수 체계 수립 및 데이터 정합성 검증<br />
+   2) 시스템 연동 문제 해결 및 안정화<br />
+   3) Google Ads / Criteo 연동 API 개발<br />
+      - 광고 채널 타겟 데이터 연계 확보<br />
+<br />
+<br />
+[ 에버랜드 App 연계 Adobe Campaign 솔루션 구축 및 운영 ]<br />
+<br />
+· 기간 : 2023.06 ~ 2025.04 (2025.05 이후 유지보수 자문 지원)<br />
+· 연계/소속 : 삼성물산 에버랜드 / 아이뱅크<br />
+· 투입 인원 : 4명 (기획 포함)<br />
+· 주요 업무 : 에버랜드 App 연계 Adobe Campaign CRM을 데이터 스키마 설계부터 다채널 발송, 쿠폰, 타겟팅까지 구축하고 약 2년간 운영 및 신규 캠페인 개발을 주도<br />
+· 기술 스택  : Adobe Campaign Classic, XML, JSSP, JavaScript, HTML, Linux, PostgreSQL, Oracle<br />
+<br />
+· 상세 역할 내용<br />
+<br />
+1. 구축 : 데이터 기반 설계<br />
+   1) 서버 구축 및 솔루션 설치 단계 참여<br />
+   2) 고객 관련 데이터 분석 및 가공을 통한 데이터 스키마 설계 및 제작<br />
+   3) Data I/F 기능 설계 및 구현<br />
+      - 타사 데이터 정기 수신을 위한 배치 로직 개발<br />
+      - 데이터 정제 및 적재 프로세스 표준화<br />
+<br />
+2. 구축 : 마케팅 기능 개발<br />
+   1) 다채널 메시지 발송 기능 구현 : SMS, MMS, Email, App Push, KAKAO<br />
+   2) 쿠폰 제작 및 발송 기능 구현<br />
+   3) 데이터 Polling 기반 준실시간 알림 자동 발송 기능 설계 및 구현<br />
+   4) 기능별 타겟 데이터 처리 결과 리포트 기능 설계 및 제작<br />
+<br />
+3. 운영 : 안정성 확보 및 확장<br />
+   1) 각 시스템 모듈 및 기능 정기 점검 체계 운영<br />
+   2) 신규 마케팅 캠페인별 데이터 타겟팅 설계 및 개발<br />
+   3) 정기 / 반복 캠페인 대응을 위한 재사용 가능 범용 타겟팅 구조 설계<br />
+      - 캠페인 요청 단위 반복 개발 최소화<br />
+   4) 데이터 검증 및 리포트 제작, 관리 화면 제작, 서버 관리<br />
+   5) 2025.05 이후 개발 시스템 유지보수 자문 형태로 지원 전환<br />
+</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+<tr>
+    <td>
+        <table style="border-top:1px solid #8491a7;">
+            <tr>
+                <td style="width:110px;vertical-align:top;">
+                    <h2 style="font-size:12px;margin-top:28px;">학력</h2>
+                    <p style="margin-top:4px;font-size:10px;color:#67738e;word-break:break-all">
+                        대학교<em>4년</em>졸업                    </p>
+                </td>
+                <td style="width:490px;vertical-align:top;padding-bottom:32px;">
+                    <table>
+                                                    <tr>
+                                <td style="padding:28px 0;">
+                                    <table style="width:490px;">
+                                        <tr>
+                                            <td style="text-align:left;word-break:break-all;word-wrap:break-word">
+                                                <h3 style="font-size:12px;font-weight:bold;color:#292e41;word-break:break-all">
+                                                    과천고등학교                                                </h3>
+                                            </td>
+                                            <td style="text-align:right;font-size:10px;color:#292e41;word-break: break-all;word-wrap:break-word">
+                                                2004.03 ~ 2007.02 (졸업)                                            </td>
+                                        </tr>
+                                                                                    <tr>
+                                                <td colspan="2" style="word-break: break-all;word-wrap:break-word">
+                                                                                                            <p style="margin:4px 0 12px 0;font-size:10px;color:#292e41;word-break: break-all">이과계열</p>
+                                                                                                        </td>
+                                            </tr>
+                                                                                </table>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td style="padding:28px 0;border-top:1px solid #d7dce5;">
+                                    <table style="width:490px;">
+                                        <tr>
+                                            <td style="text-align:left;word-break:break-all;word-wrap:break-word">
+                                                <h3 style="font-size:12px;font-weight:bold;color:#292e41;word-break:break-all">
+                                                    아주대학교(4년제)                                                </h3>
+                                            </td>
+                                            <td style="text-align:right;font-size:10px;color:#292e41;word-break: break-all;word-wrap:break-word">
+                                                2007.03 ~ 2015.02 (졸업)                                            </td>
+                                        </tr>
+                                                                                    <tr>
+                                                <td colspan="2" style="word-break: break-all;word-wrap:break-word">
+                                                                                                            <p style="margin:4px 0 12px 0;font-size:10px;color:#292e41;word-break: break-all">응용화학생명공학과</p>
+                                                                                                                <table>
+                                                                                                                            <tr>
+                                                                    <td style="width:100px;font-size:10px;vertical-align:top;">주야간</td>
+                                                                    <td style="width:10px;font-size:10px;color:#d7dce5;vertical-align:top;">|</td>
+                                                                    <td style="width:350px;font-size:10px;vertical-align:top;word-break: break-all;word-wrap:break-word">주간</td>
+                                                                </tr>
+                                                                                                                                <tr>
+                                                                    <td style="width:100px;font-size:10px;vertical-align:top;">학점</td>
+                                                                    <td style="width:10px;font-size:10px;color:#d7dce5;vertical-align:top;">|</td>
+                                                                    <td style="width:350px;font-size:10px;vertical-align:top;word-break: break-all;word-wrap:break-word">3.36/4.5</td>
+                                                                </tr>
+                                                                                                                                <tr>
+                                                                    <td style="width:100px;font-size:10px;vertical-align:top;">지역</td>
+                                                                    <td style="width:10px;font-size:10px;color:#d7dce5;vertical-align:top;">|</td>
+                                                                    <td style="width:350px;font-size:10px;vertical-align:top;word-break: break-all;word-wrap:break-word">경기</td>
+                                                                </tr>
+                                                                                                                        </table>
+                                                                                                        </td>
+                                            </tr>
+                                                                                </table>
+                                </td>
+                            </tr>
+                                                </table>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr><tr>
+    <td>
+        <table style="border-top:1px solid #8491a7;">
+            <tr>
+                <td style="width:110px;vertical-align:top;">
+                    <h2 style="font-size:12px;margin-top:28px;word-break: break-all">경험/활동/교육</h2>
+                </td>
+                <td style="width:490px;vertical-align:top;padding-bottom:32px;">
+                    <table>
+                                                    <tr>
+                                <td style="padding:28px 0;">
+                                    <table style="width:460px;">
+                                        <tr>
+                                            <td style="text-align:left;">
+                                                <h3 style="font-size:12px;font-weight:bold;color:#292e41;word-break:break-all">
+                                                    한국소프트웨어인재개발원                                                </h3>
+                                            </td>
+                                            <td style="text-align:right;font-size:10px;color:#292e41;word-break:break-all">
+                                                2022.11.21 ~ 2023.05.11                                            </td>
+                                        </tr>
+                                                                                    <tr>
+                                                <td colspan="2">
+                                                    <p style="margin:4px 0 12px 0;font-size:10px;color:#292e41;word-break: break-all">자바 파이썬 활용 빅데이터 서비스 개발자 과정 (960시간)</p>
+                                                </td>
+                                            </tr>
+                                                                                </table>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td style="padding:28px 0;border-top:1px solid #d7dce5;">
+                                    <table style="width:460px;">
+                                        <tr>
+                                            <td style="text-align:left;">
+                                                <h3 style="font-size:12px;font-weight:bold;color:#292e41;word-break:break-all">
+                                                    삼성인력개발원                                                </h3>
+                                            </td>
+                                            <td style="text-align:right;font-size:10px;color:#292e41;word-break:break-all">
+                                                2014.03 ~ 2014.06                                            </td>
+                                        </tr>
+                                                                                    <tr>
+                                                <td colspan="2">
+                                                    <p style="margin:4px 0 12px 0;font-size:10px;color:#292e41;word-break: break-all">간부교육과정의 차장과정 팀 인사지원, 행정사무 및 비품관리 업무</p>
+                                                </td>
+                                            </tr>
+                                                                                </table>
+                                </td>
+                            </tr>
+                                                </table>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr><tr>
+    <td>
+        <table style="border-top:1px solid #8491a7;">
+            <tr>
+                <td style="width:110px;vertical-align:top;">
+                    <h2 style="font-size:12px;margin-top:28px;">자격/어학/수상</h2>
+                </td>
+                <td style="width:490px;vertical-align:top;padding-bottom:32px;">
+                    <table>
+                                                    <tr>
+                                <td style="padding:28px 0;">
+                                    <table style="width:490px;">
+                                        <tr>
+                                            <td style="text-align:left;">
+                                                <h3 style="font-size:12px;font-weight:bold;color:#292e41;word-break:break-all">
+                                                    OPIC <span style="color:#67738e;font-size:12px;font-weight:normal;">(intermediate Low급)</span>                                                </h3>
+                                            </td>
+                                            <td style="text-align:right;font-size:10px;color:#292e41;word-break: break-all">
+                                                2014.03                                             </td>
+                                        </tr>
+                                                                                    <tr>
+                                                <td colspan="2">
+                                                    <p style="margin:4px 0 12px 0;font-size:10px;color:#292e41;word-break: break-all">영어</p>
+                                                </td>
+                                            </tr>
+                                                                                </table>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td style="padding:28px 0;border-top:1px solid #d7dce5;">
+                                    <table style="width:490px;">
+                                        <tr>
+                                            <td style="text-align:left;">
+                                                <h3 style="font-size:12px;font-weight:bold;color:#292e41;word-break:break-all">
+                                                    프로젝트 최우수상                                                </h3>
+                                            </td>
+                                            <td style="text-align:right;font-size:10px;color:#292e41;word-break: break-all">
+                                                2023.05                                             </td>
+                                        </tr>
+                                                                                    <tr>
+                                                <td colspan="2">
+                                                    <p style="margin:4px 0 12px 0;font-size:10px;color:#292e41;word-break: break-all">한국소프트웨어인재개발원</p>
+                                                </td>
+                                            </tr>
+                                                                                </table>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td style="padding:28px 0;border-top:1px solid #d7dce5;">
+                                    <table style="width:490px;">
+                                        <tr>
+                                            <td style="text-align:left;">
+                                                <h3 style="font-size:12px;font-weight:bold;color:#292e41;word-break:break-all">
+                                                    특모범상(100%출석상)                                                </h3>
+                                            </td>
+                                            <td style="text-align:right;font-size:10px;color:#292e41;word-break: break-all">
+                                                2023.05                                             </td>
+                                        </tr>
+                                                                                    <tr>
+                                                <td colspan="2">
+                                                    <p style="margin:4px 0 12px 0;font-size:10px;color:#292e41;word-break: break-all">한국소프트웨어인재개발원</p>
+                                                </td>
+                                            </tr>
+                                                                                </table>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td style="padding:28px 0;border-top:1px solid #d7dce5;">
+                                    <table style="width:490px;">
+                                        <tr>
+                                            <td style="text-align:left;">
+                                                <h3 style="font-size:12px;font-weight:bold;color:#292e41;word-break:break-all">
+                                                    정보처리기사  <span style="color:#67738e;font-size:12px;font-weight:normal;">(최종합격)</span>                                                </h3>
+                                            </td>
+                                            <td style="text-align:right;font-size:10px;color:#292e41;word-break: break-all">
+                                                2024.12                                             </td>
+                                        </tr>
+                                                                                    <tr>
+                                                <td colspan="2">
+                                                    <p style="margin:4px 0 12px 0;font-size:10px;color:#292e41;word-break: break-all">한국산업인력공단</p>
+                                                </td>
+                                            </tr>
+                                                                                </table>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td style="padding:28px 0;border-top:1px solid #d7dce5;">
+                                    <table style="width:490px;">
+                                        <tr>
+                                            <td style="text-align:left;">
+                                                <h3 style="font-size:12px;font-weight:bold;color:#292e41;word-break:break-all">
+                                                    SQL개발자(SQLD자격)  <span style="color:#67738e;font-size:12px;font-weight:normal;">(최종합격)</span>                                                </h3>
+                                            </td>
+                                            <td style="text-align:right;font-size:10px;color:#292e41;word-break: break-all">
+                                                2025.04                                             </td>
+                                        </tr>
+                                                                                    <tr>
+                                                <td colspan="2">
+                                                    <p style="margin:4px 0 12px 0;font-size:10px;color:#292e41;word-break: break-all">한국데이터베이스진흥센터</p>
+                                                </td>
+                                            </tr>
+                                                                                </table>
+                                </td>
+                            </tr>
+                                                </table>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr><tr>
+    <td>
+        <table style="border-top:1px solid #8491a7;">
+            <tr>
+                <td style="width:110px;vertical-align:top;">
+                    <h2 style="font-size:12px;margin-top:28px;">취업 우대사항</h2>
+                </td>
+                <td style="width:490px;vertical-align:top;padding-bottom:32px;">
+                    <table>
+                                                    <tr>
+                                <td style="padding:28px 0;">
+                                    <table style="width:490px;">
+                                        <tr>
+                                            <td style="text-align:left;">
+                                                <h3 style="font-size:12px;font-weight:bold;color:#292e41;word-break:break-all">
+                                                    병역 : 군필                                                     <span style="color:#67738e;font-size:12px;font-weight:normal;">(공군/병장)</span>                                                </h3>
+                                            </td>
+                                            <td style="text-align:right;font-size:10px;color:#292e41;word-break:break-all">
+                                                 2008.07 ~ 2010.09                                            </td>
+                                        </tr>
+                                                                                    <tr>
+                                                <td colspan="2">
+                                                    <p style="margin:4px 0 12px 0;font-size:10px;color:#292e41;word-break:break-all">만기전역</p>
+                                                </td>
+                                            </tr>
+                                                                                </table>
+                                </td>
+                            </tr>
+                                                </table>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr><tr>
+    <td>
+        <table style="border-top:1px solid #8491a7;">
+            <tr>
+                <td style="width:110px;vertical-align:top;">
+                    <h2 style="font-size:12px;margin-top:28px;word-break:normal">
+                        포트폴리오/기타문서                    </h2>
+                </td>
+                <td style="width:490px;vertical-align:top;padding-bottom:32px;">
+                    <table>
+                                                    <tr>
+                                <td style="padding:28px 0;">
+                                    <table style="width:490px;">
+                                        <tr>
+                                            <td style="text-align:left;">
+                                                <h3 style="font-size:12px;font-weight:bold;color:#292e41;word-break: break-all">
+                                                    포트폴리오                                                </h3>
+                                            </td>
+                                        </tr>
+                                                                                    <tr>
+                                                <td>
+                                                                                                            <p style="margin:4px 0 12px 0;font-size:10px;color:#292e41;word-break: break-all">
+                                                            <a  href="https://pds3.saramin.co.kr/webfile/download_memberfile_security.php?appmode=slide_webview&amp;file=person%2Fresume_filebox%2F202604%2F22%2Ftdw4jm86_is9v-xrelps_resume_filebox.pdf&amp;name2=%EA%B0%9C%EB%B0%9C%EC%9E%90_%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4G_260422%28%EC%9A%B0%ED%95%B4%EC%9D%B8%29.pdf" title="개발자 포트폴리오G_260422(우해인).pdf" style="" class="file_link" ><span>개발자 포트폴리오G_260422(우해인).pdf</span></a>                                                        </p>
+                                                                                                        </td>
+                                            </tr>
+                                                                                </table>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td style="padding:28px 0;border-top:1px solid #d7dce5;">
+                                    <table style="width:490px;">
+                                        <tr>
+                                            <td style="text-align:left;">
+                                                <h3 style="font-size:12px;font-weight:bold;color:#292e41;word-break: break-all">
+                                                    포트폴리오                                                </h3>
+                                            </td>
+                                        </tr>
+                                                                                    <tr>
+                                                <td>
+                                                                                                            <p style="margin:4px 0 12px 0;font-size:10px;color:#292e41;word-break: break-all">
+                                                            <a href="https://gainful-sweater-ad5.notion.site/LUA-AI-3d9cbf895fe08009bc70f9cbd07c66e4" target="_blank" alt="https://gainful-sweater-ad5.notion.site/LUA-AI-3d9cbf895fe08009bc70f9cbd07c66e4" title="https://gainful-sweater-ad5.notion.site/LUA-AI-3d9cbf895fe08009bc70f9cbd07c66e4" class="file_link"><span>https://gainful-sweater-ad5.notion.site/LUA-AI-3d9cbf895fe08009bc70f9cbd07c66e4</span></a>                                                        </p>
+                                                                                                                <table>
+                                                                                                                            <tr>
+                                                                    <td style="width:100px;font-size:10px;vertical-align:top;word-break: normal">작업기간</td>
+                                                                    <td style="width:10px;font-size:10px;color:#d7dce5;vertical-align:top;word-break: normal">|</td>
+                                                                    <td style="width:350px;font-size:10px;vertical-align:top;word-break: break-all;word-wrap:break-word;white-space:pre-wrap">2026.09.01~2026.09.11</td>
+                                                                </tr>
+                                                                                                                                <tr>
+                                                                    <td style="width:100px;font-size:10px;vertical-align:top;word-break: normal">작업인원</td>
+                                                                    <td style="width:10px;font-size:10px;color:#d7dce5;vertical-align:top;word-break: normal">|</td>
+                                                                    <td style="width:350px;font-size:10px;vertical-align:top;word-break: break-all;word-wrap:break-word;white-space:pre-wrap">1명</td>
+                                                                </tr>
+                                                                                                                                <tr>
+                                                                    <td style="width:100px;font-size:10px;vertical-align:top;word-break: normal">작업 툴</td>
+                                                                    <td style="width:10px;font-size:10px;color:#d7dce5;vertical-align:top;word-break: normal">|</td>
+                                                                    <td style="width:350px;font-size:10px;vertical-align:top;word-break: break-all;word-wrap:break-word;white-space:pre-wrap">Cursor AI</td>
+                                                                </tr>
+                                                                                                                                <tr>
+                                                                    <td style="width:100px;font-size:10px;vertical-align:top;word-break: normal">작업내용</td>
+                                                                    <td style="width:10px;font-size:10px;color:#d7dce5;vertical-align:top;word-break: normal">|</td>
+                                                                    <td style="width:350px;font-size:10px;vertical-align:top;word-break: break-all;word-wrap:break-word;white-space:pre-wrap">https://www.luacorp.co.kr/ko/
+
+AI 에이전트로 개발 체계를 설계하고, 1.5주 만에 1인으로 기획·개발·배포를 완료한 프로젝트로 회사소개 사이트 제작.</td>
+                                                                </tr>
+                                                                                                                        </table>
+                                                                                                        </td>
+                                            </tr>
+                                                                                </table>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td style="padding:28px 0;border-top:1px solid #d7dce5;">
+                                    <table style="width:490px;">
+                                        <tr>
+                                            <td style="text-align:left;">
+                                                <h3 style="font-size:12px;font-weight:bold;color:#292e41;word-break: break-all">
+                                                    포트폴리오                                                </h3>
+                                            </td>
+                                        </tr>
+                                                                                    <tr>
+                                                <td>
+                                                                                                            <p style="margin:4px 0 12px 0;font-size:10px;color:#292e41;word-break: break-all">
+                                                            <a href="https://gainful-sweater-ad5.notion.site/iBank-BI-Report-Project-344cbf895fe08028bfaafd46830da630?pvs=74" target="_blank" alt="https://gainful-sweater-ad5.notion.site/iBank-BI-Report-Project-344cbf895fe08028bfaafd46830da630?pvs=74" title="https://gainful-sweater-ad5.notion.site/iBank-BI-Report-Project-344cbf895fe08028bfaafd46830da630?pvs=74" class="file_link"><span>https://gainful-sweater-ad5.notion.site/iBank-BI-Report-Project-344cbf895fe08028bfaafd4···</span></a>                                                        </p>
+                                                                                                                <table>
+                                                                                                                            <tr>
+                                                                    <td style="width:100px;font-size:10px;vertical-align:top;word-break: normal">작업기간</td>
+                                                                    <td style="width:10px;font-size:10px;color:#d7dce5;vertical-align:top;word-break: normal">|</td>
+                                                                    <td style="width:350px;font-size:10px;vertical-align:top;word-break: break-all;word-wrap:break-word;white-space:pre-wrap">2025.10.01~2026.05.04</td>
+                                                                </tr>
+                                                                                                                                <tr>
+                                                                    <td style="width:100px;font-size:10px;vertical-align:top;word-break: normal">작업인원</td>
+                                                                    <td style="width:10px;font-size:10px;color:#d7dce5;vertical-align:top;word-break: normal">|</td>
+                                                                    <td style="width:350px;font-size:10px;vertical-align:top;word-break: break-all;word-wrap:break-word;white-space:pre-wrap">3명</td>
+                                                                </tr>
+                                                                                                                                <tr>
+                                                                    <td style="width:100px;font-size:10px;vertical-align:top;word-break: normal">작업 툴</td>
+                                                                    <td style="width:10px;font-size:10px;color:#d7dce5;vertical-align:top;word-break: normal">|</td>
+                                                                    <td style="width:350px;font-size:10px;vertical-align:top;word-break: break-all;word-wrap:break-word;white-space:pre-wrap">Cursor AI</td>
+                                                                </tr>
+                                                                                                                                <tr>
+                                                                    <td style="width:100px;font-size:10px;vertical-align:top;word-break: normal">작업내용</td>
+                                                                    <td style="width:10px;font-size:10px;color:#d7dce5;vertical-align:top;word-break: normal">|</td>
+                                                                    <td style="width:350px;font-size:10px;vertical-align:top;word-break: break-all;word-wrap:break-word;white-space:pre-wrap">ACC BI Report 프로젝트의 설명용 포트폴리오 사이트.
+(해당 프로젝트는 거의 다 완성되었지만 상용화 단계 전 홀딩 상태)</td>
+                                                                </tr>
+                                                                                                                        </table>
+                                                                                                        </td>
+                                            </tr>
+                                                                                </table>
+                                </td>
+                            </tr>
+                                                </table>
+                    <p class="guide_txt">* 첨부파일 다운로드는 사람인 기업회원만 가능하며 개인간 공개는 제한됩니다.</p>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+<tr>
+    <td>
+        <table style="border-top:1px solid #8491a7;">
+            <tr>
+                <td style="width:110px;vertical-align:top;">
+                    <h2 style="font-size:12px;margin-top:28px;word-break:break-all">자기소개서</h2>
+                </td>
+                <td style="width:490px;vertical-align:top;padding-bottom:32px;">
+                    <table>
+
+                                                    <tr>
+                                <td style="padding:28px 0;">
+                                    <table style="width:490px;overflow-wrap:break-word;word-break:break-all;word-wrap:break-word;white-space:normal">
+                                        <tr>
+                                            <td style="text-align:left;">
+                                                <h3 style="font-size:12px;font-weight:bold;color:#292e41;word-break:break-all">
+                                                    자기소개                                                </h3>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p style="margin:4px 0 12px 0;font-size:10px;color:#292e41;overflow-wrap:break-word;word-break:break-all;word-wrap:break-word;white-space:normal">[다양한 활동과 경험을 지나오며 마침내 적성을 찾아 도약하는 프로그래머]<br />
+<br />
+ 공학 기반의 학문을 통해 기른 구조적 문제 분석과 알고리즘적 사고는, 프로그래밍이라는 새로운 길을 만났을 때 최고의 시너지를 내는 자산이 되었습니다. 늦게 찾은 길이지만, 아이디어를 현실로 만드는 개발 과정 자체를 즐기는 저의 성향 덕분에 제로 베이스에서도 빠르게 성장할 수 있었습니다. '노력하는 자는 즐기는 자를 이길 수 없다'는 말처럼, 새로운 기술을 익히고 문제를 해결하는 과정은 저에게 두려움이 아닌 즐거움으로 다가왔습니다.<br />
+<br />
+ 이러한 저의 강점은 실제 현업 프로젝트를 진행하면서도 발휘되었습니다. 특히 삼성물산 에버랜드 리조트의 CRM 솔루션 구축 프로젝트에서 백엔드 개발을 주도하며 증명되었습니다. 수 개월에 걸친 구축 기간 동안 Data Schema, Data I/F, CRM 기능 구현 등 전반적인 개발 파트들을 이끌며 성공적으로 구축했습니다. 특히, 초기 설계에 없던 '단일 캠페인 다중 쿠폰 발행 기능'의 필요성을 먼저 파악하고 직접 제안 및 구현하여 현재까지 고객사의 마케팅 효율을 높이는 데 기여한 부분은, 제가 단순히 주어진 과업을 수행하는 것을 넘어 능동적으로 가치를 창출하는 개발자임을 보여주는 대표적인 사례라고 말씀드릴 수 있습니다.<br />
+<br />
+ 이외에도 개발 공부를 하던 당시 다른 기수들에 비해 많은 프로젝트를 진행했음에도 팀의 가치와 프로젝트의 설계를 주도적으로 도모하여 경력 대비 좋은 퀄리티의 산출물들을 제작하는데 기여하였고, 덕분에 최우수 프로젝트상을 수상하기도 하였습니다.<br />
+<br />
+ 저는 이처럼 다양한 경험을 통해 찾은 확고한 비전과 실무에서 검증된 역량을 바탕으로, 이제는 귀사와 함께 성장하고 싶습니다. 수동적인 개발자가 아닌, 회사의 비전에 귀 기울이고 동반자의 마음으로 함께 고민하며 성과를 2배, 3배로 만들어내는 핵심 인재가 될 것을 약속 드립니다.</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td style="padding:28px 0;border-top:1px solid #d7dce5;word-break:break-all">
+                                    <table style="width:490px;overflow-wrap:break-word;word-break:break-all;word-wrap:break-word;white-space:normal">
+                                        <tr>
+                                            <td style="text-align:left;">
+                                                <h3 style="font-size:12px;font-weight:bold;color:#292e41;word-break:break-all">
+                                                    전공을 선택한 이유와 해당 분야를 선택한 이유                                                </h3>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p style="margin:4px 0 12px 0;font-size:10px;color:#292e41;overflow-wrap:break-word;word-break:break-all;word-wrap:break-word;white-space:normal"> [공학 지식을 바탕으로 프로그래밍 분야에 과감히 도전하고 적성과 재미를 발견]<br />
+<br />
+ [Knowledge] 원리의 탐구에서 발견한 응용의 즐거움.<br />
+ 아주대학교 응용화학생명공학, 이 전공은 공학적 지식을 기반으로 화학과 생명 현상의 메커니즘을 분석하고, 이를 산업에 적용하는 과정으로 복잡한 문제의 본질을 꿰뚫고 해결책을 찾아내는 훈련의 연속이었습니다. 이 과정을 통해 저는 현상을 구조적으로 분석하고, 다양한 추론과 알고리즘적 사고로 문제를 해결하는 공학도의 기본기를 다질 수 있었습니다.<br />
+ 이후 프로그래밍을 처음 접했을 때, 저는 익숙한 느낌을 받았습니다. 전공을 통해 단련된, 원인을 분석하고 논리적 흐름에 따라 결과를 도출하는 사고방식은 프로그래밍의 알고리즘과 정확히 일치했습니다. 복잡한 아이디어를 코드로 구현하고, 눈앞에서 실시간으로 결과물을 만들어내는 과정은 이전 전공 지식을 응용하며 느꼈던 즐거움을 뛰어넘는 새로운 차원의 보람을 안겨주었습니다.<br />
+<br />
+ [Skill] 생각의 틀을 실현하는 가장 완벽한 도구.<br />
+ 실제로 프로젝트의 현장에서 고객의 다양한 요구에 효과적인 구현을 위하여 여러가지 아이디어를 생각해보며 다양한 테스트 케이스를 시도하였고 결과적으로 제작하여 잘 사용되어지고 있는 시스템들을 보며 큰 보람을 느끼고 있습니다. 또 개발을 공부하는 과정에서는 원하는 시스템을 제작하고자 참고할만한 사이트들의 코드를 수백, 수천 줄 해석하고 분해하여 결국 만들어 낸 경험도 있습니다.<br />
+ 이러한 과정은 결코 쉽지 않고 많은 시간을 요구하기도 하지만 배운 것, 학습한 것을 토대로 학습하고 활용하는 과정 전반이 재밌고 시간 가는 줄 모르게 됩니다.<br />
+<br />
+ [Attitude] 프로그래밍을 동반한 미래 설계와 업무를 향한 열망을 고취함.<br />
+ 항상 적성에 맞는 일을 하고 싶은 열망이 있었고, 그 ‘일’이라는 것을 즐겁게 하고 싶다고 생각했습니다.  그러다 마침내 잘하는 것과 좋아하는 것이 상호 호환되는 분야가 바로 프로그래밍 분야라는 확신을 가지게 되었고, 해당 기술을 기반으로 한 업무 열망을 고취하게 되었습니다. 이러한 적성은 개발 공부를 시작한 지 단기간에 8개의 프로젝트를 완성하고 '최우수 프로젝트상'을 수상하는 등 가시적인 성과로 이어졌습니다. 이는 프로그래밍이 저에게 가장 잘 맞는 분야라는 강력한 확신을 주었으며, 관련 자격증을 취득하며 전문성을 키우는 원동력이 되었습니다. 프로그래밍은 저의 공학적 사고를 가장 자유롭고 창의적으로 실현할 수 있는 완벽한 도구이자, 평생을 함께할 즐거운 도전입니다.<br />
+<br />
+ 이와 같은 이유를 바탕으로 저의 적성과 능력을 개발 직무에 녹아내어 효율적인 사고방식을 통해 기능을 구현하고 해결 방법을 찾아내는 인재가 되겠습니다. 그리고 이러한 저를 뽑아 주신다면 저의 역량을 200% 발휘하여 항상 만족할 만한 결과를 반드시 보여드리겠습니다.</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td style="padding:28px 0;border-top:1px solid #d7dce5;word-break:break-all">
+                                    <table style="width:490px;overflow-wrap:break-word;word-break:break-all;word-wrap:break-word;white-space:normal">
+                                        <tr>
+                                            <td style="text-align:left;">
+                                                <h3 style="font-size:12px;font-weight:bold;color:#292e41;word-break:break-all">
+                                                    소속된 조직에서 타인과 협력을 통해 공동의 목표를 추구했던 경험과, 이를 통해 깨달은 점                                                </h3>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p style="margin:4px 0 12px 0;font-size:10px;color:#292e41;overflow-wrap:break-word;word-break:break-all;word-wrap:break-word;white-space:normal">[다양한 관점과 시각으로 아이디어를 기획하고 팀 가치 도입을 통한 팀워크를 증진하여 프로젝트 완성도 120% 향상]<br />
+<br />
+ 저는 개발자로서의 경력을 쌓아오면서도 늘 팀워크와 협업을 통한 성과 창출에 가치를 두고 일해왔습니다. 개인의 기술적 성취만으로는 프로젝트가 성공하기 어렵고, 서로의 아이디어와 노력이 모여야 비로소 완성도가 높아진다는 것을 여러 경험을 통해 배웠습니다.<br />
+<br />
+첫째, 프로젝트의 성공을 위한 팀 가치관을 형성하고 팀원들이 함께 즐기고 목표를 기획할 수 있는 기반 수립.<br />
+ 개발을 처음 배우던 시절, 저는 팀 프로젝트에서 단순히 기능 구현에만 몰두하지 않고, 팀만의 가치관을 세우고 아이디어를 자유롭게 나눌 수 있는 분위기를 만드는 데 힘썼습니다. “TN(Tropical Night)”이라는 팀 이름을 정하고, 열정과 뜨거움을 모토로 아이디어를 발상하며, 팀의 색깔을 명확히 하는 방식이었습니다. 이처럼 작은 장치 하나가 팀원들의 몰입도를 끌어올렸고, 프로젝트 완성도에도 긍정적인 영향을 미쳤습니다. 그렇게 저와 팀원이 된 동료들은 이 같은 아이디어를 좋게 봐주며 같이 참여하기를 원했고 덕분에 가치가 묻어 나는 동시에 퀄리티까지 좋은 결과물들이 탄생할 수 있었습니다. 하지만 가장 중요했던 부분은 단순히 결과물이 아닌 과정에서도 즐거움과 성취감을 느낄 수 있다는 것을 알게 된 점이었습니다.<br />
+<br />
+둘째, 위기와 발전 모든 상황에서도 협업을 통한 문제해결로 최선, 최적의 결과를 도출.<br />
+ 이후 실무에 들어와서는 고객 데이터를 기반으로 한 마케팅 플랫폼 구축과 운영에 참여했습니다. 데이터 설계부터 메시지 발송, 쿠폰 기능 개발까지 전반적인 시스템 구축 들을 맡으며 기술적으로는 많은 성장을 했지만, 무엇보다 중요한 배움은 협업에서 나왔습니다. 예컨대 캠페인 운영 시 잘못된 타게팅이나 비효율적인 데이터 처리 문제가 발생하면, 이를 단순히 기술적 오류로만 보지 않고 기획 의도와 마케팅 목적까지 고려해 해결책을 논의했습니다. 그 과정에서 다양한 고객사 현업을 포함하여 함께 운영한 동료들과도 시각을 교환했고, 이를 통해 “더 나은 해결책은 언제나 여러 관점이 모일 때 나온다”는 것을 깨달을 수 있었습니다.<br />
+<br />
+ 돌이켜 보면, 저의 성장은 늘 기술적 경험과 협업 경험이 함께 맞물려 있을 때 이루어졌습니다. 팀의 가치관을 함께 세워 몰입도를 높이던 초기 경험, 다양한 아이디어를 나누며 완성도를 끌어올리던 과정, 문제 상황에서 서로의 강점을 발휘해 해결하던 순간들 모두가 지금의 저를 만들었습니다. 앞으로도 저는 프로젝트의 목표와 가치를 팀원들과 먼저 공유하고, 열린 사고로 아이디어를 실현하며, 끝까지 책임을 다하는 개발자로 성장해 나가고자 합니다. 팀의 성공을 함께 만들어가는 Best Co-Worker가 되는 것이 저의 가장 큰 목표입니다.</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td style="padding:28px 0;border-top:1px solid #d7dce5;word-break:break-all">
+                                    <table style="width:490px;overflow-wrap:break-word;word-break:break-all;word-wrap:break-word;white-space:normal">
+                                        <tr>
+                                            <td style="text-align:left;">
+                                                <h3 style="font-size:12px;font-weight:bold;color:#292e41;word-break:break-all">
+                                                    나를 나타내는 키워드                                                </h3>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p style="margin:4px 0 12px 0;font-size:10px;color:#292e41;overflow-wrap:break-word;word-break:break-all;word-wrap:break-word;white-space:normal"> 저의 장점을 나타내는 첫 번째 키워드는 &quot;Open mind&quot;입니다.<br />
+이는 상대방의 장점을 보는 데 도움을 주었습니다. 주변의 나쁜 소문만 듣고 선입견을 품기보다는, 직접 부딪혔을 때 그 사람의 본질을 볼 수 있기 때문입니다.<br />
+<br />
+ 두 번째로, 팀 프로젝트를 할 때는 &quot;Supporter&quot;의 역할을 도맡아 하였습니다.<br />
+팀원들의 역량을 끌어내기 위해 편한 분위기를 조성하고 최대한 발언권을 공유합니다. 더 좋은 결과를 도출하기 위해서는 모두의 참여가 필요하기 때문입니다.<br />
+<br />
+ 끝으로 높은 집중력을 통하여 묵직하게 업무에 “Focus” 합니다.<br />
+MBTI가 ENTJ로 그 중에서도 높은 수치인 N(직관형)과 J(계획형) 성향을 바탕으로 현재 맡은 업무에 집중합니다.  이를 통해 목표에 초점을 맞추고 그것을 해내기 위한 다양한 방법을 모색하고 문제를 해결해 나갑니다.<br />
+<br />
+ 비록 가끔 너무 집중할 때면 눈의 초점이 흐릿하다는 말을 듣거나 주변의 소리를 잘 못 듣기도 할 정도로 생각의 바다에 깊이 잠기기도 하지만 때로는 이러한 성향 덕분에 다양한 아이디어나 새로운 관점을 제시하여 보탬이 되기도 하였습니다.<br />
+<br />
+이를 바탕으로, 이제는 제가 속한 회사의 팀에서 동료들에게 도움이 되고 또 사랑을 받는 “Best Programmer”로 거듭나고 싶습니다.<br />
+</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                                                </table>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>    </table>
+</div>
+</body>
+</html>

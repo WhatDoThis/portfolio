@@ -1,0 +1,16 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+
+# Secrets
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+
+# Logs
+*.log
