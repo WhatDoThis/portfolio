@@ -17,8 +17,8 @@ if (-not $remoteUrl) {
     gh repo create $repoName --public --source=. --remote=origin --description "Woo Haein developer portfolio"
 } else {
     Write-Host "저장소가 이미 존재합니다: $remoteUrl"
-    git remote get-url origin 2>$null
-    if ($LASTEXITCODE -ne 0) {
+    $existingRemote = git remote get-url origin 2>$null
+    if (-not $existingRemote) {
         git remote add origin "https://github.com/$(gh api user -q .login)/$repoName.git"
     }
 }
