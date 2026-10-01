@@ -1,10 +1,18 @@
 # Log
 
 ## Log Index
+3. 2026-10-02 포트폴리오 목차 추가
 2. 2026-10-02 포트폴리오 LG U+ · ACC BI Report 내용 반영
 1. 2026-09-13 GitHub Pages 배포 준비
 
 ## Log Body
+
+3. 2026-10-02 포트폴리오 목차 추가
+Purpose: 소개 다음에 목차를 두고 섹션으로 바로 이동할 수 있게 함
+Changes:
+- 소개 아래 목차 9개 항목 추가
+- 항목 선택 시 같은 페이지 해당 섹션으로 스크롤
+Changed files: publish/index.html, publish/styles-v2.css, update/26_10_02/포트폴리오.html, update/26_10_02/styles-v2.css
 
 2. 2026-10-02 포트폴리오 LG U+ · ACC BI Report 내용 반영
 Purpose: update/26_10_02 제작본을 배포 페이지에 반영하고, LG U+ 역할 범위와 ACC BI Report 상태를 수정
