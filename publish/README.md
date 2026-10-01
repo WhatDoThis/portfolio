@@ -131,7 +131,7 @@
 |---|---|---|
 | 2026.09.01 — 09.11 | LUA 기업 웹사이트 개발 (1.5주, 1인 전담) + `개인 프로젝트` 인라인 배지 | `1인` / 루아주식회사 · 기획 · 개발 · 배포 · 인프라 |
 | 2026.05 — 진행중 | LG 유플러스 Adobe Target / Campaign 구축 | `Adobe` / LG 유플러스 · 8명 팀 · 백엔드 · 솔루션 커스텀 개발 |
-| 2025.10 — 진행중 | iBank BI Report — 노코드 BI 플랫폼 | `자체` / 3명 팀 · 메인 풀스택 개발 |
+| 2025.10 — 진행보류 | ACC BI Report — 노코드 데이터 분석 · 대시보드 플랫폼 (프로토타입) | `자체` / 3명 · 메인 개발 · 상용화(QA·UI/UX·쿼리 고도화) 진행 여부 미정 |
 | 2025.10 — 2026.02 | ACC BI Assistant — AI 마케팅 분석 시스템 | `자체` / 1인 풀스택 · RAG · MCP |
 | 2025.05 — 2025.09 | 삼성전자 마케팅 Adobe Campaign V7 → V8 업그레이드 | `Adobe` / 삼성전자 · 5명 팀 · 데이터 이관 · 검수 · API 개발 |
 | 2023.06 — 2025.04 | 삼성물산 에버랜드 App 연계 Adobe Campaign 구축·운영 | `Adobe` / 삼성물산 에버랜드 · 4명 팀 · 백엔드 · CRM 기능 설계 · 운영 17개월 |
@@ -258,7 +258,7 @@
 - `.d-line-accent`: `stroke: var(--accent)`, stroke-width 1.5, fill none
 
 **다이어그램 4종** (원본 SVG는 `포트폴리오.html` 안에 인라인):
-1. **FIG.01 (LG U+)** — SQL 생성 LLM 파이프라인: 마케터 → 프롬프트 → LLM → 검증기 → Adobe Campaign (아래 라벨: "타겟 추출 (SQL 코드 제작)"). 하단에 **Fatigue 커스텀 모듈**은 Adobe Campaign 박스 아래 배치되어 LLM과 독립임을 시각적으로 표현. 캡션에 이 사실 명시.
+1. **FIG.01 (LG U+)** — Adobe Campaign SQL 생성 LLM 파이프라인만 표시: 마케터 → 프롬프트 → LLM → 검증기 → Adobe Campaign (라벨: "타겟 추출 (SQL 코드 제작)"). Fatigue는 Campaign 구축 본문에만 두고 다이어그램에는 넣지 않는다.
 2. **FIG.02 (ACC BI Assistant)** — RAG · MCP 파이프라인: 사용자 → 1차 가공 → 임베딩 검색 → 2차 가공 → 3종 응답, 아래 MCP Tools, 위 Neo4j
 3. **FIG.03 (삼성전자 V7→V8)** — V7 side → Migration Pipeline → V8 side (에버랜드 · LG U+ 이력 이관 흐름)
 4. **FIG.04 (LUA Web)** — 수평 Phase 0~7 + 수직 5-role agent orchestration + 규칙 박스
@@ -530,7 +530,7 @@
 - **PART 01/02/03 프로젝트 순서는 시작일 최근순**. 임의로 재배열하지 마십시오.
 - **02. Experience 타임라인**도 시작일 최근순 (LUA가 맨 위, 에버랜드가 맨 아래).
 - **4개 SVG 다이어그램**은 프로젝트별 정체성 요소입니다. viewBox·좌표·라벨을 임의 변경하지 마십시오. CSS 변수로 컬러 바인딩되어 있어 테마 전환 시 자동 적응합니다.
-- **FIG.01 (LG U+)** — Fatigue 모듈은 Adobe Campaign 아래에 배치되어 "LLM과 독립"임을 시각적으로 표현. 캡션에도 이 사실이 명시되어 있음. 위치 변경 금지.
+- **FIG.01 (LG U+)** — SQL 생성 LLM 파이프라인만 표시한다. Fatigue 제어는 Adobe Campaign 구축 본문의 한 파트이며 다이어그램에 넣지 않는다.
 - **AI Tools 카테고리(3번째 skills row)** 는 시각 강조가 필수. `.skills-cat.highlight`와 tag의 `.strong` 스타일이 이 강조를 담당.
 - **LUA Web의 `.impact-strip`** (`1.5주 · 34페이지 · 1명 · $0`)는 이 포트폴리오에서 가장 임팩트 있는 요소. 4-column grid + 좌측 accent color 숫자 반드시 유지.
 - **인쇄 최적화(@media print)** 는 채용 사이트 첨부용 PDF 출력에 사용됩니다. 필수 이식 항목.
