@@ -1,11 +1,19 @@
 # Log
 
 ## Log Index
+4. 2026-10-02 목차로 돌아가는 버튼 추가
 3. 2026-10-02 포트폴리오 목차 추가
 2. 2026-10-02 포트폴리오 LG U+ · ACC BI Report 내용 반영
 1. 2026-09-13 GitHub Pages 배포 준비
 
 ## Log Body
+
+4. 2026-10-02 목차로 돌아가는 버튼 추가
+Purpose: 섹션으로 이동한 뒤 목차로 바로 돌아올 수 있게 함
+Changes:
+- 목차를 지나 스크롤하면 우측 하단에 ↑ 목차 버튼 표시
+- 버튼 선택 시 목차 위치로 스크롤
+Changed files: publish/index.html, publish/styles-v2.css, update/26_10_02/포트폴리오.html, update/26_10_02/styles-v2.css
 
 3. 2026-10-02 포트폴리오 목차 추가
 Purpose: 소개 다음에 목차를 두고 섹션으로 바로 이동할 수 있게 함

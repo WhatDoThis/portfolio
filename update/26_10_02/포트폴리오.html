@@ -59,7 +59,7 @@
   </div>
 </header>
 
-<nav class="toc" aria-label="목차">
+<nav class="toc" id="toc" aria-label="목차">
   <div class="page">
     <div class="section-head">
       <div class="section-num">Contents</div>
@@ -1271,6 +1271,22 @@
     <div class="mono">Last updated · 2026.10</div>
   </div>
 </footer>
+
+<a href="#toc" class="to-toc no-print" id="to-toc" hidden>↑ 목차</a>
+<script>
+(function () {
+  var toc = document.getElementById('toc');
+  var btn = document.getElementById('to-toc');
+  if (!toc || !btn) return;
+
+  function syncToToc() {
+    btn.hidden = toc.getBoundingClientRect().bottom >= 0;
+  }
+
+  syncToToc();
+  window.addEventListener('scroll', syncToToc, { passive: true });
+})();
+</script>
 
 <!-- Tweaks mount -->
 <div id="tweaks-root" class="no-print"></div>
