@@ -1,6 +1,7 @@
 # Log
 
 ## Log Index
+6. 2026-10-21 LG U+ 요약 줄바꿈 및 SQL LLM FIG.02 추가
 5. 2026-10-21 LG U+ 프로젝트 상세 역할 반영
 4. 2026-10-02 목차로 돌아가는 버튼 추가
 3. 2026-10-02 포트폴리오 목차 추가
@@ -8,6 +9,13 @@
 1. 2026-09-13 GitHub Pages 배포 준비
 
 ## Log Body
+
+6. 2026-10-21 LG U+ 요약 줄바꿈 및 SQL LLM FIG.02 추가
+Purpose: Target/Campaign 요약 가독성 개선 및 Campaign SQL LLM PoC 아키텍처 시각화
+Changes:
+- project-summary Target·Campaign 문단 분리
+- FIG.02 SQL 생성 LLM 파이프라인 다이어그램 및 PoC 설명 보강
+Changed files: publish/index.html, publish/styles-v2.css
 
 5. 2026-10-21 LG U+ 프로젝트 상세 역할 반영
 Purpose: LG U+ Adobe Target/Campaign 최근 프로젝트 내용을 포트폴리오에 반영하고 채용담당자 가독성에 맞게 재구성

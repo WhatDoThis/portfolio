@@ -376,11 +376,15 @@
         </div>
       </div>
 
-      <p class="project-summary">
-        LG U+ <strong>Web/App 개인화 마케팅(Adobe Target)</strong> 구축에서 요구사항 정의, 시스템 구조 설계, 커스텀 엔진 개발, 고객사 연동까지 <strong>Target 영역을 단독 주도</strong>하며 <strong>구축 PL</strong>을 병행합니다.
-        제품 기본 기능(OOTB)만으로는 맞추기 어려운 요구는 커스텀 설계로 해결하고, 화면·조건별로 결과가 달라지는 개인화 특성에 맞춰 <strong>경로 단위 검증</strong>으로 배포 품질을 관리합니다.
-        Adobe Campaign 영역은 <strong>자연어→SQL 타겟 추출 PoC</strong>(납품 제외)와 발송 제어(Typology) 정책 설정을 부가 수행합니다.
-      </p>
+      <div class="project-summary-wrap">
+        <p class="project-summary">
+          LG U+ <strong>Web/App 개인화 마케팅(Adobe Target)</strong> 구축에서 요구사항 정의, 시스템 구조 설계, 커스텀 엔진 개발, 고객사 연동까지 <strong>Target 영역을 단독 주도</strong>하며 <strong>구축 PL</strong>을 병행합니다.
+          제품 기본 기능(OOTB)만으로는 맞추기 어려운 요구는 커스텀 설계로 해결하고, 화면·조건별로 결과가 달라지는 개인화 특성에 맞춰 <strong>경로 단위 검증</strong>으로 배포 품질을 관리합니다.
+        </p>
+        <p class="project-summary">
+          Adobe Campaign 영역은 <strong>자연어→SQL 타겟 추출 PoC</strong>(납품 제외)와 발송 제어(Typology) 정책 설정을 부가 수행합니다.
+        </p>
+      </div>
 
       <div class="resp-grid">
         <div class="resp-label">역할 한줄 요약</div>
@@ -421,7 +425,7 @@
         <div class="resp-label">Campaign · 부가</div>
         <div class="resp-content">
           <ul>
-            <li><strong>SQL 생성 PoC</strong> — 자연어로 타겟 추출 SQL을 만드는 LLM 기능 검증(프롬프트·응답 검증·토큰 효율). <em>납품 범위에는 포함되지 않음</em></li>
+            <li><strong>SQL 생성 PoC</strong> — 자연어로 타겟 추출 SQL을 만드는 LLM 파이프라인을 <strong>1인 설계·구현</strong>(프롬프트·응답 검증·토큰 효율). LG U+ 납품 범위에는 포함되지 않으나, 동일 Adobe Campaign 환경의 다른 고객사에도 적용 가능한 수준으로 검증</li>
             <li><strong>발송 제어</strong> — OOTB Typology(유형 규칙) 기반 발송 제어 정책 설정 및 요구사항 반영</li>
           </ul>
         </div>
@@ -473,6 +477,54 @@
           </g>
         </svg>
         <div class="diagram-cap">FIG.01 — Adobe Target 개인화 노출 흐름 (트리거 → 엔진 → Offer · 데이터 연계)</div>
+      </div>
+
+      <div class="diagram">
+        <svg viewBox="0 0 860 130" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="arr-lgu-sql" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 0 L 10 5 L 0 10 z" fill="currentColor"></path>
+            </marker>
+          </defs>
+
+          <g transform="translate(10, 36)">
+            <rect class="d-box" x="0" y="0" width="120" height="56" rx="4"></rect>
+            <text class="d-label" x="60" y="26" text-anchor="middle" font-size="12">마케터</text>
+            <text class="d-dim" x="60" y="42" text-anchor="middle">자연어 질의</text>
+          </g>
+
+          <g transform="translate(170, 36)">
+            <rect class="d-box" x="0" y="0" width="130" height="56" rx="4"></rect>
+            <text class="d-label" x="65" y="26" text-anchor="middle" font-size="12">프롬프트</text>
+            <text class="d-dim" x="65" y="42" text-anchor="middle">고객 스키마 주입</text>
+          </g>
+
+          <g transform="translate(340, 36)">
+            <rect class="d-box-accent" x="0" y="0" width="130" height="56" rx="4"></rect>
+            <text class="d-label" x="65" y="26" text-anchor="middle" font-size="12">LLM</text>
+            <text class="d-dim" x="65" y="42" text-anchor="middle">SQL 생성</text>
+          </g>
+
+          <g transform="translate(510, 36)">
+            <rect class="d-box" x="0" y="0" width="130" height="56" rx="4"></rect>
+            <text class="d-label" x="65" y="26" text-anchor="middle" font-size="12">검증기</text>
+            <text class="d-dim" x="65" y="42" text-anchor="middle">응답 검증</text>
+          </g>
+
+          <g transform="translate(680, 36)">
+            <rect class="d-box" x="0" y="0" width="160" height="56" rx="4"></rect>
+            <text class="d-label" x="80" y="26" text-anchor="middle" font-size="12">Adobe Campaign</text>
+            <text class="d-dim" x="80" y="42" text-anchor="middle">타겟 추출 (SQL)</text>
+          </g>
+
+          <g color="currentColor">
+            <path class="d-line-accent" d="M 130 64 L 168 64" marker-end="url(#arr-lgu-sql)"></path>
+            <path class="d-line-accent" d="M 300 64 L 338 64" marker-end="url(#arr-lgu-sql)"></path>
+            <path class="d-line-accent" d="M 470 64 L 508 64" marker-end="url(#arr-lgu-sql)"></path>
+            <path class="d-line-accent" d="M 640 64 L 678 64" marker-end="url(#arr-lgu-sql)"></path>
+          </g>
+        </svg>
+        <div class="diagram-cap">FIG.02 — Adobe Campaign SQL 생성 LLM PoC (1인 설계·구현 · LG U+ 납품 제외 · 타 ACC 환경 재사용 가능 수준)</div>
       </div>
 
       <div class="project-stack">

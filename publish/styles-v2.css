@@ -535,6 +535,16 @@ a.link:hover { text-decoration-thickness: 2px; }
   color: var(--fg-2);
 }
 
+.project-summary-wrap {
+  max-width: 780px;
+  margin: 0 0 20px;
+}
+.project-summary-wrap .project-summary {
+  margin: 0 0 12px;
+}
+.project-summary-wrap .project-summary:last-child {
+  margin-bottom: 0;
+}
 .project-summary {
   font-size: 14.5px;
   color: var(--fg-1);
