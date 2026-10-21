@@ -1,12 +1,21 @@
 # Log
 
 ## Log Index
+5. 2026-10-21 LG U+ 프로젝트 상세 역할 반영
 4. 2026-10-02 목차로 돌아가는 버튼 추가
 3. 2026-10-02 포트폴리오 목차 추가
 2. 2026-10-02 포트폴리오 LG U+ · ACC BI Report 내용 반영
 1. 2026-09-13 GitHub Pages 배포 준비
 
 ## Log Body
+
+5. 2026-10-21 LG U+ 프로젝트 상세 역할 반영
+Purpose: LG U+ Adobe Target/Campaign 최근 프로젝트 내용을 포트폴리오에 반영하고 채용담당자 가독성에 맞게 재구성
+Changes:
+- Experience 타임라인·프로젝트 헤더 메타(단독 담당·PL) 갱신
+- 요약·resp-grid 5블록(설계·데이터·협업·Campaign 부가) 및 Target 중심 FIG.01 다이어그램
+- Stack 태그(AEP Web SDK, SQL 등) 정리
+Changed files: publish/index.html
 
 4. 2026-10-02 목차로 돌아가는 버튼 추가
 Purpose: 섹션으로 이동한 뒤 목차로 바로 돌아올 수 있게 함

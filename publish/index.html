@@ -163,7 +163,7 @@
           <div class="timeline-title">LG 유플러스 Adobe Target / Adobe Campaign 구축</div>
           <div class="timeline-meta">
             <span class="timeline-badge primary">Adobe</span>
-            LG 유플러스 · 8명 (Cursor AI 활용) · 솔루션 구축 · 커스텀 개발
+            LG 유플러스 / 아이뱅크 · 8명 · Target 영역 단독 · 구축 PL · Cursor AI
           </div>
         </div>
       </div>
@@ -369,47 +369,60 @@
           <div class="project-sub">
             <span>LG 유플러스 / 아이뱅크</span><span class="divider">·</span>
             <span>2026.05 — 진행중</span><span class="divider">·</span>
-            <span>8명 (Cursor AI 활용)</span><span class="divider">·</span>
-            <span>솔루션 구축 · 커스텀 개발</span>
+            <span>8명 (Target 영역 단독 · Cursor AI)</span><span class="divider">·</span>
+            <span>구축 PL · 요구사항~고객사 연동</span>
             <span class="status">진행중</span>
           </div>
         </div>
       </div>
 
       <p class="project-summary">
-        Adobe Target에서는 <strong>SDK·공통 스크립트 삽입 방식</strong>을 설계하고, 고객사 Web/App 전 영역의 <strong>개인화 기반을 분석·정의</strong>합니다.
-        Adobe Campaign 구축에서는 OOTB로 제공되지 않는 <strong>자연어 SQL 타겟 추출 LLM</strong>을 핵심으로 개발하고, <strong>발송 피로도(Fatigue) 제어</strong>도 같은 구축 범위의 한 파트로 담당합니다.
+        LG U+ <strong>Web/App 개인화 마케팅(Adobe Target)</strong> 구축에서 요구사항 정의, 시스템 구조 설계, 커스텀 엔진 개발, 고객사 연동까지 <strong>Target 영역을 단독 주도</strong>하며 <strong>구축 PL</strong>을 병행합니다.
+        제품 기본 기능(OOTB)만으로는 맞추기 어려운 요구는 커스텀 설계로 해결하고, 화면·조건별로 결과가 달라지는 개인화 특성에 맞춰 <strong>경로 단위 검증</strong>으로 배포 품질을 관리합니다.
+        Adobe Campaign 영역은 <strong>자연어→SQL 타겟 추출 PoC</strong>(납품 제외)와 발송 제어(Typology) 정책 설정을 부가 수행합니다.
       </p>
 
       <div class="resp-grid">
-        <div class="resp-label">Adobe Target 구축</div>
+        <div class="resp-label">역할 한줄 요약</div>
+        <div class="resp-content">
+          <p style="margin:0;">
+            고객 TF와 직접 요구사항·고도화 방향을 논의하고, 제안한 로직의 대부분이 실제 설계에 반영되도록 주도.
+            WBS·공수 산정·체크리스트·개발 가이드까지 포함해 <strong>구축 전 과정의 기술 리드</strong>를 수행합니다.
+          </p>
+        </div>
+
+        <div class="resp-label">Target · 설계·구현</div>
         <div class="resp-content">
           <ul>
-            <li>SDK 및 공통스크립트 삽입 방식 설계</li>
-            <li>고객사 Web/App 전 영역 개인화 기반 분석 및 정의</li>
-            <li>Adobe 시스템 간 API 연동 파이프라인 및 페이로드 개발 — 고객 행동 데이터 수집 파라미터 정의 · 전달 규격 수립, 페이지 / 액션 단위 트리거 조건 설계</li>
-            <li>트리거 및 노출유형 컴포넌트(팝업, 배너 등)의 재사용 가능한 코드 제작 및 최적화 — 캠페인별 중복 개발 제거</li>
-            <li>구축 산출물 표준화 — WBS · 구축항목 체크리스트 · 개발 가이드 문서</li>
+            <li><strong>요구사항·구조 설계</strong> — TF와 요구사항·고도화 방향 논의, OOTB로 불가한 항목은 커스텀 설계로 전환</li>
+            <li><strong>클라이언트 엔진</strong> — Target 라이브러리 삽입 방식 기반, 화면 행동 트리거 · Offer(노출 방식) 분기 · dataLayer(행동 데이터 수집 규격) · 이벤트 호출·파라미터 규격 설계·구현</li>
+            <li><strong>재사용 구조</strong> — 캠페인마다 반복 개발하지 않도록 공통 컴포넌트화(팝업·배너 등)</li>
           </ul>
         </div>
 
-        <div class="resp-label">Adobe Campaign 구축</div>
+        <div class="resp-label">Target · 데이터·검증</div>
         <div class="resp-content">
           <ul>
-            <li><strong>SQL 생성 LLM</strong> — 구축에서 담당한 핵심 개발 범위
-              <ul>
-                <li>OOTB 미제공 기능 신규 개발 — 자연어(NL) 입력으로 대상 고객 추출 SQL을 생성하는 LLM 기능 설계</li>
-                <li>고객 데이터 스키마를 반영한 프롬프트 및 응답 검증 로직 구현</li>
-                <li>마케터의 타겟 추출 의존도를 낮추는 셀프서비스 구조 확보 — 생성 결과의 솔루션 기능 자동 연동</li>
-              </ul>
-            </li>
-            <li><strong>Fatigue 제어</strong> — 같은 Adobe Campaign 구축에서 담당한 발송 제어 파트
-              <ul>
-                <li>OOTB Typology(유형 규칙) 기반 제어의 제약을 보완하는 커스텀 로직 설계</li>
-                <li>고객 데이터 · 요구사항 기반 제어 기준 정의 — 채널별 / 특정 영역별 발송 한도 및 우선순위 적용</li>
-                <li>타겟팅 워크플로우에 공통 적용 가능한 형태로 모듈화</li>
-              </ul>
-            </li>
+            <li><strong>데이터 파이프라인</strong> — 개인화 운영용 수집·적재 흐름, 연관 커스텀 테이블 설계, Campaign 연계 구간 정합성 확보</li>
+            <li><strong>경로 기반 QA</strong> — 조건 분기를 경로 단위로 펼쳐 케이스를 최대한 도출·검증(단일 기능 테스트가 아닌 <em>시나리오 경로</em> 기준)</li>
+            <li><strong>배포 통제</strong> — 검증 결과를 체크리스트로 관리, 미검증 경로가 배포되지 않도록 통제</li>
+          </ul>
+        </div>
+
+        <div class="resp-label">협업 · 기술 확보</div>
+        <div class="resp-content">
+          <ul>
+            <li>고객사 Web/App 개발자와 연동 규격 협의 및 구현 조율</li>
+            <li>Adobe(솔루션사)와 제품 제약·권장 구현 방식 확인</li>
+            <li>공식 문서 기반으로 제품 내부 동작을 이해하고 설계 판단에 반영</li>
+          </ul>
+        </div>
+
+        <div class="resp-label">Campaign · 부가</div>
+        <div class="resp-content">
+          <ul>
+            <li><strong>SQL 생성 PoC</strong> — 자연어로 타겟 추출 SQL을 만드는 LLM 기능 검증(프롬프트·응답 검증·토큰 효율). <em>납품 범위에는 포함되지 않음</em></li>
+            <li><strong>발송 제어</strong> — OOTB Typology(유형 규칙) 기반 발송 제어 정책 설정 및 요구사항 반영</li>
           </ul>
         </div>
       </div>
@@ -423,56 +436,57 @@
           </defs>
 
           <g transform="translate(10, 36)">
-            <rect class="d-box" x="0" y="0" width="120" height="56" rx="4"></rect>
-            <text class="d-label" x="60" y="26" text-anchor="middle" font-size="12">마케터</text>
-            <text class="d-dim" x="60" y="42" text-anchor="middle">자연어 질의</text>
+            <rect class="d-box" x="0" y="0" width="130" height="56" rx="4"></rect>
+            <text class="d-label" x="65" y="26" text-anchor="middle" font-size="12">Web / App</text>
+            <text class="d-dim" x="65" y="42" text-anchor="middle">고객 화면</text>
           </g>
 
           <g transform="translate(170, 36)">
+            <rect class="d-box" x="0" y="0" width="150" height="56" rx="4"></rect>
+            <text class="d-label" x="75" y="26" text-anchor="middle" font-size="12">행동 트리거</text>
+            <text class="d-dim" x="75" y="42" text-anchor="middle">페이지 · 액션 조건</text>
+          </g>
+
+          <g transform="translate(350, 36)">
+            <rect class="d-box-accent" x="0" y="0" width="170" height="56" rx="4"></rect>
+            <text class="d-label" x="85" y="26" text-anchor="middle" font-size="12">Target 커스텀 엔진</text>
+            <text class="d-dim" x="85" y="42" text-anchor="middle">분기 · dataLayer · 이벤트</text>
+          </g>
+
+          <g transform="translate(550, 36)">
             <rect class="d-box" x="0" y="0" width="130" height="56" rx="4"></rect>
-            <text class="d-label" x="65" y="26" text-anchor="middle" font-size="12">프롬프트</text>
-            <text class="d-dim" x="65" y="42" text-anchor="middle">고객 스키마 주입</text>
+            <text class="d-label" x="65" y="26" text-anchor="middle" font-size="12">개인화 Offer</text>
+            <text class="d-dim" x="65" y="42" text-anchor="middle">팝업 · 배너 등</text>
           </g>
 
-          <g transform="translate(340, 36)">
-            <rect class="d-box-accent" x="0" y="0" width="130" height="56" rx="4"></rect>
-            <text class="d-label" x="65" y="26" text-anchor="middle" font-size="12">LLM</text>
-            <text class="d-dim" x="65" y="42" text-anchor="middle">SQL 생성</text>
-          </g>
-
-          <g transform="translate(510, 36)">
+          <g transform="translate(710, 36)">
             <rect class="d-box" x="0" y="0" width="130" height="56" rx="4"></rect>
-            <text class="d-label" x="65" y="26" text-anchor="middle" font-size="12">검증기</text>
-            <text class="d-dim" x="65" y="42" text-anchor="middle">응답 검증</text>
-          </g>
-
-          <g transform="translate(680, 36)">
-            <rect class="d-box" x="0" y="0" width="160" height="56" rx="4"></rect>
-            <text class="d-label" x="80" y="26" text-anchor="middle" font-size="12">Adobe Campaign</text>
-            <text class="d-dim" x="80" y="42" text-anchor="middle">타겟 추출 (SQL 코드 제작)</text>
+            <text class="d-label" x="65" y="26" text-anchor="middle" font-size="12">데이터 적재</text>
+            <text class="d-dim" x="65" y="42" text-anchor="middle">Campaign 연계</text>
           </g>
 
           <g color="currentColor">
-            <path class="d-line-accent" d="M 130 64 L 168 64" marker-end="url(#arr1)"></path>
-            <path class="d-line-accent" d="M 300 64 L 338 64" marker-end="url(#arr1)"></path>
-            <path class="d-line-accent" d="M 470 64 L 508 64" marker-end="url(#arr1)"></path>
-            <path class="d-line-accent" d="M 640 64 L 678 64" marker-end="url(#arr1)"></path>
+            <path class="d-line-accent" d="M 140 64 L 168 64" marker-end="url(#arr1)"></path>
+            <path class="d-line-accent" d="M 320 64 L 348 64" marker-end="url(#arr1)"></path>
+            <path class="d-line-accent" d="M 520 64 L 548 64" marker-end="url(#arr1)"></path>
+            <path class="d-line-accent" d="M 680 64 L 708 64" marker-end="url(#arr1)"></path>
           </g>
         </svg>
-        <div class="diagram-cap">FIG.01 — Adobe Campaign SQL 생성 LLM 파이프라인 (자연어 질의로 타겟 추출 SQL 생성)</div>
+        <div class="diagram-cap">FIG.01 — Adobe Target 개인화 노출 흐름 (트리거 → 엔진 → Offer · 데이터 연계)</div>
       </div>
 
       <div class="project-stack">
         <span class="label">Stack</span>
         <span class="skill-tag strong">Adobe Target</span>
         <span class="skill-tag strong">Adobe Campaign Classic</span>
+        <span class="skill-tag">AEP Web SDK</span>
         <span class="skill-tag">JavaScript</span>
         <span class="skill-tag">HTML · CSS</span>
         <span class="skill-tag">XML</span>
         <span class="skill-tag">JSSP</span>
+        <span class="skill-tag">SQL</span>
         <span class="skill-tag">OpenRouter</span>
-        <span class="skill-tag">AI API</span>
-        <span class="skill-tag">Cursor AI</span>
+        <span class="skill-tag strong">Cursor AI</span>
       </div>
     </div>
 
@@ -1137,7 +1151,7 @@
 
       <div class="about-item">
         <h3>Prompt · Context Engineering</h3>
-        <p>ACC BI Assistant · LG U+ SQL LLM 개발에서 축적한 프롬프트 설계 패턴.</p>
+        <p>ACC BI Assistant · LG U+ Campaign SQL PoC에서 축적한 프롬프트 설계 패턴.</p>
         <ul>
           <li>Inject — 스키마 프롬프트 주입</li>
           <li>Validate — 응답의 코드 재검증</li>
