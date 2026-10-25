@@ -1,6 +1,7 @@
 # Log
 
 ## Log Index
+22. 2026-10-25 GitHub Pages 배포 (빈틈 본문 가독성)
 21. 2026-10-25 빈틈도구 본문 비개발자 가독성 보강
 20. 2026-10-25 빈틈도구 2차 축약 (소개·본문·FIG)
 19. 2026-10-25 GitHub Pages 배포 (ToolSite_v2·S/M/L)
@@ -24,6 +25,12 @@
 1. 2026-09-13 GitHub Pages 배포 준비
 
 ## Log Body
+
+22. 2026-10-25 GitHub Pages 배포 (빈틈 본문 가독성)
+Purpose: 2차 축약·본문 plain language 반영
+Changes:
+- commit 6927a50 push main
+Changed files: (deploy only)
 
 21. 2026-10-25 빈틈도구 본문 비개발자 가독성 보강
 Purpose: resp-grid만 plain language, lib/shared/Edge 등 축약어 제거·의미 유지
