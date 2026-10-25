@@ -1,6 +1,9 @@
 # Log
 
 ## Log Index
+18. 2026-10-25 빈틈도구 소개 S/M/L 풀이 추가
+17. 2026-10-25 빈틈도구 impact-strip 순서 정렬
+16. 2026-10-25 빈틈도구 섹션 ToolSite_v2 개편
 15. 2026-10-25 GitHub Pages 푸시 배포 (impact-strip 3칸)
 14. 2026-10-25 Part 03 impact-strip 3칸 통일
 13. 2026-10-25 GitHub Pages 푸시 배포 (빈틈·AutoBlog)
@@ -18,6 +21,24 @@
 1. 2026-09-13 GitHub Pages 배포 준비
 
 ## Log Body
+
+18. 2026-10-25 빈틈도구 소개 S/M/L 풀이 추가
+Purpose: 소개글 S/M/L 최초 등장에 작은 수정/기능 단위/다면 변경 병기
+Changes:
+- project-summary 한 줄
+Changed files: publish/index.html
+
+17. 2026-10-25 빈틈도구 impact-strip 순서 정렬
+Purpose: LUA·AutoBlog와 동일하게 AI·에이전트 → 규모(URL) → 검증(테스트) 순
+Changes:
+- 1인 · 24+ · 326 순서
+Changed files: publish/index.html
+
+16. 2026-10-25 빈틈도구 섹션 ToolSite_v2 개편
+Purpose: docs/add/ToolSite_v2.md — 소개 축약, 4→3+추적 블록, FIG.05·06·Stack
+Changes:
+- 24+/326/1인 지표, 기획→구현 표·3줄 예시, Tailwind·Lighthouse/CDP 제거
+Changed files: publish/index.html
 
 15. 2026-10-25 GitHub Pages 푸시 배포 (impact-strip 3칸)
 Purpose: Part 03 impact-strip 3칸 변경 Pages 반영

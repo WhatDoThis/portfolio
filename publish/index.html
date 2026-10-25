@@ -1193,68 +1193,87 @@
       </div>
 
       <p class="project-summary">
-        <strong>빈틈툴(binteumtool.com)</strong> — Next.js·Cloudflare Workers 생활·개발 도구. 계산은 브라우저 순수 함수만, 민감 입력은 서버로 보내지 않습니다.
-        Rules · Skills · As-Built(<strong>publish · log</strong>)를 정본으로 두고 블랙박스 · 오케스트레이터 · 코드 검증 · 코드 · 문서 역할을 분리한 Vibe Coding을 <strong>운영 서비스</strong>에 적용했습니다.
-        요청마다 <strong>S / M / L</strong>을 선언하고, CI가 deploy를 자동 막는 항목은 <strong>lint · test · build</strong>뿐입니다. UX(M/L)는 blackbox·path coverage·As-Built를 운영 규칙으로 보강합니다(Pivot·UX는 구현 후 blackbox 가능, blackbox 단독 merge 차단 아님).
+        <strong>빈틈툴(<a href="https://binteumtool.com/" target="_blank" rel="noopener">binteumtool.com</a>)</strong> — Next.js·Cloudflare Workers 기반 생활·개발 <strong>URL 단위 계산 허브</strong>. 연산·입력은 <strong>브라우저</strong>, 서버는 <strong>조회수·SEO·정적 자산</strong>만 담당합니다.
+        1인 개발이지만 <strong>Vibe Coding</strong>으로 역할을 나눕니다: 설계 계약(<code>docs/main</code>)과 <strong>배포 동작 정본(as-built·레지스트리·log)</strong>을 분리하고, Cursor <strong>Rules·Skills</strong>로 에이전트 행동을 고정한 뒤 <strong>블랙박스 UX → 구현 → 경로 커버리지 → lint/test/build → 문서 갱신</strong>을 <strong>S/M/L(작은 수정/기능 단위/다면 변경)</strong> 크기별로 반복합니다.
+        <strong>CI가 deploy를 막는 것은 lint·test·build뿐</strong>이며, UX·문서 동기화는 <strong>운영 체크리스트</strong>로 보강합니다.
       </p>
 
       <div class="impact-strip">
         <div class="impact-cell">
           <div class="impact-num">1인</div>
-          <div class="impact-desc">에이전트 분업 운영</div>
+          <div class="impact-desc">5 역할 · 에이전트 분업</div>
         </div>
         <div class="impact-cell">
-          <div class="impact-num">27페이지</div>
-          <div class="impact-desc">활성 라우트·연년</div>
+          <div class="impact-num">24+</div>
+          <div class="impact-desc">공개 URL</div>
         </div>
         <div class="impact-cell">
-          <div class="impact-num">5층</div>
-          <div class="impact-desc">검증·에이전트 레이어</div>
+          <div class="impact-num">326</div>
+          <div class="impact-desc">Vitest (53 files)</div>
         </div>
       </div>
 
       <div class="resp-grid">
-        <div class="resp-label">아키텍처</div>
+        <div class="resp-label">시스템 설계 · 아키텍처</div>
         <div class="resp-content">
           <ul>
-            <li>회원·서버 저장·계산 API 없이 <strong>클라이언트 연산</strong> 중심 — 서버는 조회수(경로 단위)·정적 자산·SEO만 담당</li>
-            <li>상태는 localStorage·URL Hash 규격, 도구 간 공유는 읽기 전용 · 계산 모듈 간 상호 참조 금지</li>
-            <li>외부 의존(DB·광고·공공데이터) 부재 시 <strong>기능 축소</strong>로 끝나도록 설계 (장애 전파 방지)</li>
+            <li><strong>경계:</strong> 회원·서버 저장·계산 API 없음 → 클라이언트 <code>lib/</code> 순수 함수 + Edge 정적·SEO·<strong>D1 조회수(선택)</strong></li>
+            <li><strong>상태:</strong> localStorage·URL hash 규격; 도메인 간 직접 import 금지, <code>shared/</code> 경유</li>
+            <li><strong>외부 의존:</strong> DB·광고·공공데이터 없으면 기능 축소로 종료(장애 전파 방지)</li>
+            <li><strong>제품 단위:</strong> 홈·달력 허브 + 연휴·퇴사·아이·정산 + 생활 3 + 유틸 8 — URL 하나 = 계산·SEO 패키지</li>
           </ul>
         </div>
 
-        <div class="resp-label">AI 에이전트 · S/M/L</div>
+        <div class="resp-label">에이전틱 워크플로</div>
         <div class="resp-content">
           <ul>
-            <li>고정 R1~R10 파이프라인 아님 — 계획 첫 줄에 <strong>S / M / L</strong> · <strong>S0</strong>는 <code>docs/main</code> 설계 피벗(DECISIONS 재조사 금지)</li>
-            <li><strong>S</strong> (문구·1~3파일): lint · 관련 test · <strong>M</strong> (기능 1개·≤10파일): lint · test · build · <strong>L</strong> (다중 섹션·라우트): 섹션마다 lint · test · build</li>
-            <li><strong>블랙박스</strong> — PC 1280 / 모바일 375 UX·rubric, 코드 수정 금지 · UX(M/L)는 원칙상 선행(Pivot·UX → 구현 후 blackbox, merge 단독 차단 아님)</li>
-            <li><strong>오케스트레이터</strong> — 에이전트 선정 · gap 순서 · <strong>path coverage 6단계</strong>(사람 검토 생략 시 필수) · 서브에이전트 동시 최대 2 · 경로 겹치면 금지</li>
-            <li><strong>시간 순(M/L·UX)</strong> blackbox → 구현 → path coverage → lint · test · build → As-Built · log · Rules/Skills(변경 시)</li>
-            <li>코드 검증은 로컬·GitHub Actions 공통 <strong>lint · test · build</strong> · 테스트 선행 · 326건 자동화(Vitest)</li>
+            <li><strong>작업 단위:</strong> 고정 R1~R10 아님 — 요청마다 <strong>S/M/L</strong>(S=lint+관련 test, M/L=lint+test+build). <strong>S0</strong>는 <code>docs/main</code> 피벗(DECISIONS 재조사 금지)</li>
+            <li><strong>역할:</strong> 블랙박스(UX·코드 금지) → 오케스트레이터(path 6단계) → 코드 검증 → 코드 에이전트(구현·as-built 흡수) → 문서(publish·log·Rules·Skills). 서브에이전트 동시 2·파일 겹침 금지</li>
+            <li><strong>시간 순(M/L·UX):</strong> blackbox → 구현 → path coverage → lint·test·build → as-built·log *(Pivot·UX: 구현 후 blackbox, merge 단독 차단 아님)*</li>
+            <li><strong>완료 정의:</strong> log에 <strong>명령·exit code</strong>가 있을 때만; UX는 path coverage 또는 report 근거</li>
           </ul>
         </div>
 
-        <div class="resp-label">문서 정본</div>
+        <div class="resp-label">기획 → 구현 추적</div>
         <div class="resp-content">
+          <p style="margin:0 0 10px; font-size:14px; line-height:1.6; color:var(--fg-1);">
+            기능은 <strong>타당성(report) → lib+test → 라우트·SEO → UX 검증 → 문서 레지스트리</strong>로 이어지며, 매 사이클이 log 한 줄로 남습니다.
+          </p>
+          <table style="width:100%; border-collapse:collapse; font-size:12.5px; line-height:1.45; margin:0 0 12px;">
+            <thead>
+              <tr style="background:var(--bg-alt);">
+                <th style="border:1px solid var(--border); padding:7px 10px; text-align:left; font-weight:600;">단계</th>
+                <th style="border:1px solid var(--border); padding:7px 10px; text-align:left; font-weight:600;">설계자·AI</th>
+                <th style="border:1px solid var(--border); padding:7px 10px; text-align:left; font-weight:600;">검증·산출</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td style="border:1px solid var(--border); padding:6px 10px;">Discover</td><td style="border:1px solid var(--border); padding:6px 10px;">비목표·DECISIONS·report 타당성</td><td style="border:1px solid var(--border); padding:6px 10px;">GO/NO-GO</td></tr>
+              <tr><td style="border:1px solid var(--border); padding:6px 10px;">Define</td><td style="border:1px solid var(--border); padding:6px 10px;">docs/main 계약, storage·hash, SEO slug</td><td style="border:1px solid var(--border); padding:6px 10px;">publish row 초안</td></tr>
+              <tr><td style="border:1px solid var(--border); padding:6px 10px;">Build</td><td style="border:1px solid var(--border); padding:6px 10px;">M/L 구현, Vitest 동반</td><td style="border:1px solid var(--border); padding:6px 10px;">test 증가(297→326)</td></tr>
+              <tr><td style="border:1px solid var(--border); padding:6px 10px;">Harden</td><td style="border:1px solid var(--border); padding:6px 10px;">blackbox·path coverage·compliance UI</td><td style="border:1px solid var(--border); padding:6px 10px;">report 12~16류</td></tr>
+              <tr><td style="border:1px solid var(--border); padding:6px 10px;">Ship</td><td style="border:1px solid var(--border); padding:6px 10px;">GitHub Actions deploy, 도메인·RL</td><td style="border:1px solid var(--border); padding:6px 10px;">운영 200, 배포 컬럼</td></tr>
+            </tbody>
+          </table>
           <ul>
-            <li><strong>구현 전·계약</strong> <code>docs/main</code> · <code>docs/order</code> · <strong>배포 동작(as-built)</strong> publish 레지스트리 · <strong>UX·타당성</strong> report · <strong>완료 근거</strong> log(명령·exit code)</li>
-            <li>라우트·API 행 단위(경로 · 렌더 · 저장소 · 배포 · 대표 test) · As-Built는 히스토리 금지·변경 절만 갱신</li>
-            <li>코드 에이전트는 URL·storage·UI·lib 사실을 publish·As-Built에 흡수 — PRD 본문에 과거 감사·히스토리 넣지 않음 · 문서 레이어 <strong>publish · log · Rules · Skills</strong></li>
+            <li><em>생활 확장:</em> 타당성 → 생활 3종 라우트 + test·build</li>
+            <li><em>모바일·패널:</em> UX report → z-index·스크롤 → path coverage → test 300대</li>
+            <li><em>운영 정합:</em> 출처 푸터·ToolFrame 순서 → compliance test → as-built·registry 동기화</li>
           </ul>
         </div>
 
-        <div class="resp-label">Cloudflare · CI</div>
+        <div class="resp-label">배포 · 운영</div>
         <div class="resp-content">
           <ul>
-            <li><strong>Workers + OpenNext</strong> 배포, 초기 런타임 이슈 빌드 후처리 · <strong>binteumtool.com</strong> 도메인 · <strong>Rate Limiting</strong></li>
-            <li>GitHub Actions <strong>lint · test · build</strong> 통과 후 deploy · 배포 후 버전·응답 헤더 확인 · 공휴일·기준 데이터는 CI 주간 갱신(브라우저 아님) · push·배포는 사용자 명시 시만</li>
+            <li>Workers + OpenNext, <strong>binteumtool.com</strong>, Rate Limiting</li>
+            <li>Actions: <strong>lint·test·build</strong> 후 deploy; 공휴일·LMS <strong>주간 CI</strong>(브라우저 API 호출 금지)</li>
+            <li>push·merge·배포는 <strong>사용자 명시 시</strong> — 에이전트 자율 배포 금지</li>
           </ul>
         </div>
       </div>
 
       <div class="diagram">
-        <svg viewBox="0 0 860 165" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 860 178" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <marker id="arr-bint-05" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
               <path d="M 0 0 L 10 5 L 0 10 z" fill="currentColor"></path>
@@ -1265,16 +1284,16 @@
 
           <g>
             <rect class="d-box-accent" x="10" y="28" width="98" height="44" rx="4"></rect>
-            <text class="d-label" x="59" y="46" text-anchor="middle" font-size="10">설계 문서</text>
-            <text class="d-dim" x="59" y="60" text-anchor="middle">정본</text>
+            <text class="d-label" x="59" y="42" text-anchor="middle" font-size="9">계약 docs/main</text>
+            <text class="d-dim" x="59" y="56" text-anchor="middle" font-size="9">as-built publish·log</text>
 
             <rect class="d-box" x="116" y="28" width="98" height="44" rx="4"></rect>
             <text class="d-label" x="165" y="46" text-anchor="middle" font-size="10">에이전트</text>
             <text class="d-dim" x="165" y="60" text-anchor="middle">문서 / 코드</text>
 
             <rect class="d-box" x="222" y="28" width="98" height="44" rx="4"></rect>
-            <text class="d-label" x="271" y="46" text-anchor="middle" font-size="10">검증 게이트</text>
-            <text class="d-dim" x="271" y="60" text-anchor="middle">blackbox · path</text>
+            <text class="d-label" x="271" y="42" text-anchor="middle" font-size="9">검증 게이트</text>
+            <text class="d-dim" x="271" y="56" text-anchor="middle" font-size="8">blackbox·path→CI</text>
 
             <rect class="d-box" x="328" y="28" width="98" height="44" rx="4"></rect>
             <text class="d-label" x="377" y="46" text-anchor="middle" font-size="10">Git Push</text>
@@ -1289,8 +1308,8 @@
             <text class="d-dim" x="589" y="60" text-anchor="middle">OpenNext</text>
 
             <rect class="d-box" x="646" y="28" width="98" height="44" rx="4"></rect>
-            <text class="d-label" x="695" y="46" text-anchor="middle" font-size="10">운영</text>
-            <text class="d-dim" x="695" y="60" text-anchor="middle">도메인 · RL</text>
+            <text class="d-label" x="695" y="42" text-anchor="middle" font-size="9">binteumtool.com</text>
+            <text class="d-dim" x="695" y="56" text-anchor="middle" font-size="9">Rate Limit</text>
 
             <rect class="d-box" x="752" y="28" width="98" height="44" rx="4"></rect>
             <text class="d-label" x="801" y="46" text-anchor="middle" font-size="10">상태 확인</text>
@@ -1308,9 +1327,10 @@
             <path class="d-line" d="M 801 72 C 801 95, 59 95, 59 72" marker-end="url(#arr-bint-05)"></path>
           </g>
 
-          <text class="d-dim" x="400" y="118" text-anchor="middle" font-size="10">순환 — 다음 작업 사이클은 설계 문서(정본) 갱신부터 재개</text>
+          <text class="d-dim" x="430" y="118" text-anchor="middle" font-size="9">순환 — as-built·log 갱신 확인 후 설계 계약 수정 · 다음 사이클</text>
+          <text class="d-dim" x="430" y="132" text-anchor="middle" font-size="8">에이전트 → blackbox·path(UX) → CI → Git → Workers → 헤더·버전 → publish/log</text>
         </svg>
-        <div class="diagram-cap">FIG.05 — 개발·배포 루프 (설계 정본 → 에이전트 → 검증 → Git · CI → Workers → 도메인·Rate Limit → 상태 확인)</div>
+        <div class="diagram-cap">FIG.05 — 개발·배포 루프 (계약+as-built → 에이전트 → 검증 → Git · CI → binteumtool.com → 상태 확인)</div>
       </div>
 
       <div class="diagram">
@@ -1401,21 +1421,19 @@
             <text class="d-dim" x="16" y="34" font-size="10">blackbox · publish/log · path coverage — 체크리스트·PR (blackbox 단독 merge 차단 아님)</text>
           </g>
         </svg>
-        <div class="diagram-cap">FIG.06 — S·M·L 작업 단위 × 역할 레이어 (세로=역할 구분, 하단=시간 순 · CI 자동 차단은 lint · test · build)</div>
+        <div class="diagram-cap">FIG.06 — S·M·L × 5 역할 레이어 (S칸·as-built·하단 시간 순 · CI 차단=lint·test·build)</div>
       </div>
 
       <div class="project-stack">
         <span class="label">Stack</span>
         <span class="skill-tag strong">Next.js</span>
         <span class="skill-tag strong">TypeScript</span>
+        <span class="skill-tag strong">Tailwind CSS</span>
         <span class="skill-tag strong">Cloudflare Workers</span>
         <span class="skill-tag">OpenNext</span>
-        <span class="skill-tag">Wrangler</span>
-        <span class="skill-tag">Cloudflare D1</span>
+        <span class="skill-tag">D1</span>
         <span class="skill-tag">GitHub Actions</span>
         <span class="skill-tag">Vitest</span>
-        <span class="skill-tag">Lighthouse</span>
-        <span class="skill-tag">Chrome DevTools Protocol</span>
         <span class="skill-tag strong">Cursor AI (Rules · Skills)</span>
       </div>
     </div>
