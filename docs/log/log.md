@@ -1,6 +1,9 @@
 # Log
 
 ## Log Index
+25. 2026-10-25 Part 03 impact·메타·Stack 통일
+24. 2026-10-25 AutoBlog Studio 카드 As-Built 정합
+23. 2026-10-25 docs/add 요약방식정의.md 표준 체크리스트 작성
 22. 2026-10-25 GitHub Pages 배포 (빈틈 본문 가독성)
 21. 2026-10-25 빈틈도구 본문 비개발자 가독성 보강
 20. 2026-10-25 빈틈도구 2차 축약 (소개·본문·FIG)
@@ -25,6 +28,24 @@
 1. 2026-09-13 GitHub Pages 배포 준비
 
 ## Log Body
+
+25. 2026-10-25 Part 03 impact·메타·Stack 통일
+Purpose: 3프로젝트 impact 1칸·부가설명 통일, 빈틈 17+ 도구, LUA·AutoBlog 메타·소개
+Changes:
+- publish/index.html LUA·빈틈·AutoBlog
+Changed files: publish/index.html
+
+24. 2026-10-25 AutoBlog Studio 카드 As-Built 정합
+Purpose: AutoBlog.cmd·프로필/인덱스·LLM 가드레일·4블록·FIG·Stack 정본 반영
+Changes:
+- publish/index.html AutoBlog 카드·타임라인 메타
+Changed files: publish/index.html
+
+23. 2026-10-25 docs/add 요약방식정의.md 표준 체크리스트 작성
+Purpose: 빈틈도구 반영 과정을 A→Z 검수 체크리스트·서술 레이어로 표준화
+Changes:
+- docs/add/요약방식정의.md 신규
+Changed files: docs/add/요약방식정의.md
 
 22. 2026-10-25 GitHub Pages 배포 (빈틈 본문 가독성)
 Purpose: 2차 축약·본문 plain language 반영
