@@ -1,6 +1,7 @@
 # Log
 
 ## Log Index
+28. 2026-10-25 AutoBlog Studio 제목·배포 표기 수정
 27. 2026-10-25 Part 03 project-head 2행 레이아웃
 26. 2026-10-25 GitHub Pages 배포 (Part 03 통일·AutoBlog As-Built)
 25. 2026-10-25 Part 03 impact·메타·Stack 통일
@@ -30,6 +31,13 @@
 1. 2026-09-13 GitHub Pages 배포 준비
 
 ## Log Body
+
+28. 2026-10-25 AutoBlog Studio 제목·배포 표기 수정
+Purpose: 제목 줄바꿈 왜곡 완화 및 배포 안내 문구 정리
+Changes:
+- 프로젝트명과 부제 분리(— 제거), 부제 글자 크기 축소
+- 배포 안내에서 AutoBlog.cmd · 제거
+Changed files: publish/index.html, publish/styles-v2.css
 
 27. 2026-10-25 Part 03 project-head 2행 레이아웃
 Purpose: 개인 프로젝트만 제목+링크 1행·메타 전폭 2행으로 분리해 줄바꿈 왜곡 완화

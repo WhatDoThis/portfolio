@@ -544,6 +544,23 @@ a.link:hover { text-decoration-thickness: 2px; }
   margin: 0 0 4px;
   letter-spacing: -0.01em;
 }
+.project-title-split {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.2em 0.45em;
+}
+.project-title-split .project-title-name {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+.project-title-split .project-title-sub {
+  font-size: 14.5px;
+  font-weight: 500;
+  color: var(--fg-1);
+  letter-spacing: -0.005em;
+}
 .project-sub {
   font-size: 13px;
   color: var(--fg-2);
