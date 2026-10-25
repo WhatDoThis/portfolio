@@ -1193,23 +1193,22 @@
       </div>
 
       <p class="project-summary">
-        <strong>빈틈툴(<a href="https://binteumtool.com/" target="_blank" rel="noopener">binteumtool.com</a>)</strong> — Next.js·Cloudflare Workers 기반 생활·개발 <strong>URL 단위 계산 허브</strong>. 연산·입력은 <strong>브라우저</strong>, 서버는 <strong>조회수·SEO·정적 자산</strong>만 담당합니다.
-        1인 개발이지만 <strong>Vibe Coding</strong>으로 역할을 나눕니다: 설계 계약(<code>docs/main</code>)과 <strong>배포 동작 정본(as-built·레지스트리·log)</strong>을 분리하고, Cursor <strong>Rules·Skills</strong>로 에이전트 행동을 고정한 뒤 <strong>블랙박스 UX → 구현 → 경로 커버리지 → lint/test/build → 문서 갱신</strong>을 <strong>S/M/L(작은 수정/기능 단위/다면 변경)</strong> 크기별로 반복합니다.
-        <strong>CI가 deploy를 막는 것은 lint·test·build뿐</strong>이며, UX·문서 동기화는 <strong>운영 체크리스트</strong>로 보강합니다.
+        <strong>빈틈툴(<a href="https://binteumtool.com/" target="_blank" rel="noopener">binteumtool.com</a>)</strong> — 생활·개발 <strong>URL 단위 계산 허브</strong>(Next.js·Cloudflare Workers). 연산·입력은 브라우저, 서버는 조회수·SEO·정적 자산만.
+        1인 개발이지만 Cursor <strong>Rules·Skills</strong>로 UX 검증·구현·테스트·<strong>배포 동작 문서(as-built)</strong>를 역할 분리해 반복 운영합니다.
       </p>
 
       <div class="impact-strip">
         <div class="impact-cell">
           <div class="impact-num">1인</div>
-          <div class="impact-desc">5 역할 · 에이전트 분업</div>
+          <div class="impact-desc">5역할·분업</div>
         </div>
         <div class="impact-cell">
           <div class="impact-num">24+</div>
-          <div class="impact-desc">공개 URL</div>
+          <div class="impact-desc">URL</div>
         </div>
         <div class="impact-cell">
           <div class="impact-num">326</div>
-          <div class="impact-desc">Vitest (53 files)</div>
+          <div class="impact-desc">Vitest</div>
         </div>
       </div>
 
@@ -1217,63 +1216,45 @@
         <div class="resp-label">시스템 설계 · 아키텍처</div>
         <div class="resp-content">
           <ul>
-            <li><strong>경계:</strong> 회원·서버 저장·계산 API 없음 → 클라이언트 <code>lib/</code> 순수 함수 + Edge 정적·SEO·<strong>D1 조회수(선택)</strong></li>
-            <li><strong>상태:</strong> localStorage·URL hash 규격; 도메인 간 직접 import 금지, <code>shared/</code> 경유</li>
-            <li><strong>외부 의존:</strong> DB·광고·공공데이터 없으면 기능 축소로 종료(장애 전파 방지)</li>
-            <li><strong>제품 단위:</strong> 홈·달력 허브 + 연휴·퇴사·아이·정산 + 생활 3 + 유틸 8 — URL 하나 = 계산·SEO 패키지</li>
+            <li>회원 가입·서버 DB·「서버에서 남의 입력으로 계산」 API 없음 — <strong>계산·입력은 사용자 브라우저</strong>에서만 처리</li>
+            <li>서버 역할은 <strong>페이지 조회수(경로별)</strong>, 정적 파일 전달, 검색·공유용 메타정보(SEO)로 한정</li>
+            <li>입력값·설정은 브라우저 저장소에 두고, 도구끼리는 <strong>읽기 전용</strong>으로만 공유 — 한 기능 수정이 다른 기능을 깨지 않게 모듈을 분리</li>
+            <li>홈·달력 허브와 연휴·퇴사·생활·유틸 등 <strong>도구마다 전용 URL</strong> — 페이지 하나가 「계산 + 설명 + 검색 노출」 묶음</li>
+            <li>공공데이터·광고 등 외부 연동이 없거나 실패하면 <strong>해당 기능만 줄이고</strong> 전체 서비스는 유지</li>
           </ul>
         </div>
 
         <div class="resp-label">에이전틱 워크플로</div>
         <div class="resp-content">
           <ul>
-            <li><strong>작업 단위:</strong> 고정 R1~R10 아님 — 요청마다 <strong>S/M/L</strong>(S=lint+관련 test, M/L=lint+test+build). <strong>S0</strong>는 <code>docs/main</code> 피벗(DECISIONS 재조사 금지)</li>
-            <li><strong>역할:</strong> 블랙박스(UX·코드 금지) → 오케스트레이터(path 6단계) → 코드 검증 → 코드 에이전트(구현·as-built 흡수) → 문서(publish·log·Rules·Skills). 서브에이전트 동시 2·파일 겹침 금지</li>
-            <li><strong>시간 순(M/L·UX):</strong> blackbox → 구현 → path coverage → lint·test·build → as-built·log *(Pivot·UX: 구현 후 blackbox, merge 단독 차단 아님)*</li>
-            <li><strong>완료 정의:</strong> log에 <strong>명령·exit code</strong>가 있을 때만; UX는 path coverage 또는 report 근거</li>
+            <li>작업마다 규모 <strong>S/M/L</strong>을 정함 — 작은 수정 / 기능 하나 / 화면·구조를 넓게 바꿀 때마다 <strong>자동 검사·테스트 범위</strong>만 달라짐</li>
+            <li><strong>5가지 AI 역할:</strong> (1) 블랙박스 — PC·모바일에서 실제 화면 체험·평가, 코드는 건드리지 않음 (2) 오케스트레이터 — 어떤 에이전트를 쓸지, 사용자 동선 커버리지 점검 (3) 코드 검증 — 배포 전 자동 품질·빌드 검사 (4) 구현 — 기능 반영 후 「지금 배포된 동작」 문서 갱신 (5) 문서 — 변경 기록·규칙 유지</li>
+            <li>화면·사용감(UX) 작업은 블랙박스·동선 검증을 거치고, 「끝났다」는 판단은 <strong>자동 테스트 통과 + 작업 로그(명령·결과)</strong>가 남을 때만</li>
           </ul>
         </div>
 
         <div class="resp-label">기획 → 구현 추적</div>
         <div class="resp-content">
-          <p style="margin:0 0 10px; font-size:14px; line-height:1.6; color:var(--fg-1);">
-            기능은 <strong>타당성(report) → lib+test → 라우트·SEO → UX 검증 → 문서 레지스트리</strong>로 이어지며, 매 사이클이 log 한 줄로 남습니다.
+          <p style="margin:0 0 8px; font-size:14px; line-height:1.6; color:var(--fg-1);">
+            아이디어는 <strong>타당성 검토 → 로직·자동 테스트 → 페이지·SEO → 사용감 점검 → 배포 동작 문서</strong> 순으로 이어지고, 한 번의 작업 사이클마다 <strong>로그 한 줄</strong>로 남깁니다.
           </p>
-          <table style="width:100%; border-collapse:collapse; font-size:12.5px; line-height:1.45; margin:0 0 12px;">
-            <thead>
-              <tr style="background:var(--bg-alt);">
-                <th style="border:1px solid var(--border); padding:7px 10px; text-align:left; font-weight:600;">단계</th>
-                <th style="border:1px solid var(--border); padding:7px 10px; text-align:left; font-weight:600;">설계자·AI</th>
-                <th style="border:1px solid var(--border); padding:7px 10px; text-align:left; font-weight:600;">검증·산출</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td style="border:1px solid var(--border); padding:6px 10px;">Discover</td><td style="border:1px solid var(--border); padding:6px 10px;">비목표·DECISIONS·report 타당성</td><td style="border:1px solid var(--border); padding:6px 10px;">GO/NO-GO</td></tr>
-              <tr><td style="border:1px solid var(--border); padding:6px 10px;">Define</td><td style="border:1px solid var(--border); padding:6px 10px;">docs/main 계약, storage·hash, SEO slug</td><td style="border:1px solid var(--border); padding:6px 10px;">publish row 초안</td></tr>
-              <tr><td style="border:1px solid var(--border); padding:6px 10px;">Build</td><td style="border:1px solid var(--border); padding:6px 10px;">M/L 구현, Vitest 동반</td><td style="border:1px solid var(--border); padding:6px 10px;">test 증가(297→326)</td></tr>
-              <tr><td style="border:1px solid var(--border); padding:6px 10px;">Harden</td><td style="border:1px solid var(--border); padding:6px 10px;">blackbox·path coverage·compliance UI</td><td style="border:1px solid var(--border); padding:6px 10px;">report 12~16류</td></tr>
-              <tr><td style="border:1px solid var(--border); padding:6px 10px;">Ship</td><td style="border:1px solid var(--border); padding:6px 10px;">GitHub Actions deploy, 도메인·RL</td><td style="border:1px solid var(--border); padding:6px 10px;">운영 200, 배포 컬럼</td></tr>
-            </tbody>
-          </table>
           <ul>
-            <li><em>생활 확장:</em> 타당성 → 생활 3종 라우트 + test·build</li>
-            <li><em>모바일·패널:</em> UX report → z-index·스크롤 → path coverage → test 300대</li>
-            <li><em>운영 정합:</em> 출처 푸터·ToolFrame 순서 → compliance test → as-built·registry 동기화</li>
+            <li><em>예 — 생활 도구 3종:</em> 기획·타당성 확인 후 페이지 추가, 테스트·빌드까지 한 사이클</li>
+            <li><em>예 — 모바일 UX:</em> 사용성 보고 → 스크롤·레이어 수정 → 주요 화면 동선 재점검 → 출처 표기·운영 문서와 맞춤</li>
           </ul>
         </div>
 
         <div class="resp-label">배포 · 운영</div>
         <div class="resp-content">
           <ul>
-            <li>Workers + OpenNext, <strong>binteumtool.com</strong>, Rate Limiting</li>
-            <li>Actions: <strong>lint·test·build</strong> 후 deploy; 공휴일·LMS <strong>주간 CI</strong>(브라우저 API 호출 금지)</li>
-            <li>push·merge·배포는 <strong>사용자 명시 시</strong> — 에이전트 자율 배포 금지</li>
+            <li>운영 도메인 <strong>binteumtool.com</strong>, Cloudflare Workers 배포, 과도한 요청 <strong>Rate Limiting</strong></li>
+            <li>GitHub Actions로 검사 통과 시 배포 · 공휴일·기준 데이터는 <strong>서버 주간 배치</strong>로 갱신(사용자 브라우저에서 직접 긁지 않음)</li>
           </ul>
         </div>
       </div>
 
       <div class="diagram">
-        <svg viewBox="0 0 860 178" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 860 168" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <marker id="arr-bint-05" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
               <path d="M 0 0 L 10 5 L 0 10 z" fill="currentColor"></path>
@@ -1284,36 +1265,36 @@
 
           <g>
             <rect class="d-box-accent" x="10" y="28" width="98" height="44" rx="4"></rect>
-            <text class="d-label" x="59" y="42" text-anchor="middle" font-size="9">계약 docs/main</text>
-            <text class="d-dim" x="59" y="56" text-anchor="middle" font-size="9">as-built publish·log</text>
+            <text class="d-label" x="59" y="42" text-anchor="middle" font-size="9">계약</text>
+            <text class="d-dim" x="59" y="56" text-anchor="middle" font-size="9">as-built</text>
 
             <rect class="d-box" x="116" y="28" width="98" height="44" rx="4"></rect>
             <text class="d-label" x="165" y="46" text-anchor="middle" font-size="10">에이전트</text>
-            <text class="d-dim" x="165" y="60" text-anchor="middle">문서 / 코드</text>
+            <text class="d-dim" x="165" y="60" text-anchor="middle" font-size="9">문서·코드</text>
 
             <rect class="d-box" x="222" y="28" width="98" height="44" rx="4"></rect>
-            <text class="d-label" x="271" y="42" text-anchor="middle" font-size="9">검증 게이트</text>
-            <text class="d-dim" x="271" y="56" text-anchor="middle" font-size="8">blackbox·path→CI</text>
+            <text class="d-label" x="271" y="42" text-anchor="middle" font-size="9">blackbox</text>
+            <text class="d-dim" x="271" y="56" text-anchor="middle" font-size="9">path·CI</text>
 
             <rect class="d-box" x="328" y="28" width="98" height="44" rx="4"></rect>
-            <text class="d-label" x="377" y="46" text-anchor="middle" font-size="10">Git Push</text>
-            <text class="d-dim" x="377" y="60" text-anchor="middle">저장소 반영</text>
+            <text class="d-label" x="377" y="46" text-anchor="middle" font-size="10">Git</text>
+            <text class="d-dim" x="377" y="60" text-anchor="middle" font-size="9">push</text>
 
             <rect class="d-box" x="434" y="28" width="98" height="44" rx="4"></rect>
             <text class="d-label" x="483" y="46" text-anchor="middle" font-size="10">CI</text>
-            <text class="d-dim" x="483" y="60" text-anchor="middle">lint · test · build</text>
+            <text class="d-dim" x="483" y="60" text-anchor="middle" font-size="9">lint·test·build</text>
 
             <rect class="d-box" x="540" y="28" width="98" height="44" rx="4"></rect>
             <text class="d-label" x="589" y="46" text-anchor="middle" font-size="10">Workers</text>
-            <text class="d-dim" x="589" y="60" text-anchor="middle">OpenNext</text>
+            <text class="d-dim" x="589" y="60" text-anchor="middle" font-size="9">OpenNext</text>
 
             <rect class="d-box" x="646" y="28" width="98" height="44" rx="4"></rect>
-            <text class="d-label" x="695" y="42" text-anchor="middle" font-size="9">binteumtool.com</text>
+            <text class="d-label" x="695" y="42" text-anchor="middle" font-size="9">binteumtool</text>
             <text class="d-dim" x="695" y="56" text-anchor="middle" font-size="9">Rate Limit</text>
 
             <rect class="d-box" x="752" y="28" width="98" height="44" rx="4"></rect>
-            <text class="d-label" x="801" y="46" text-anchor="middle" font-size="10">상태 확인</text>
-            <text class="d-dim" x="801" y="60" text-anchor="middle">헤더 · 버전</text>
+            <text class="d-label" x="801" y="46" text-anchor="middle" font-size="10">헤더</text>
+            <text class="d-dim" x="801" y="60" text-anchor="middle" font-size="9">publish·log</text>
           </g>
 
           <g color="currentColor">
@@ -1327,10 +1308,13 @@
             <path class="d-line" d="M 801 72 C 801 95, 59 95, 59 72" marker-end="url(#arr-bint-05)"></path>
           </g>
 
-          <text class="d-dim" x="430" y="118" text-anchor="middle" font-size="9">순환 — as-built·log 갱신 확인 후 설계 계약 수정 · 다음 사이클</text>
-          <text class="d-dim" x="430" y="132" text-anchor="middle" font-size="8">에이전트 → blackbox·path(UX) → CI → Git → Workers → 헤더·버전 → publish/log</text>
+          <g transform="translate(10, 88)">
+            <rect class="d-box" x="0" y="0" width="840" height="36" rx="4"></rect>
+            <text class="d-dim" x="16" y="16" font-size="9">순환: as-built·log 확인 → 계약 수정 · UX 시 blackbox·path 선행</text>
+            <text class="d-dim" x="16" y="28" font-size="8">에이전트 산출 → blackbox·path(UX) → CI → Git → Workers → 헤더·버전 → publish/log</text>
+          </g>
         </svg>
-        <div class="diagram-cap">FIG.05 — 개발·배포 루프 (계약+as-built → 에이전트 → 검증 → Git · CI → binteumtool.com → 상태 확인)</div>
+        <div class="diagram-cap">FIG.05 — 계약·as-built부터 binteumtool.com·헤더 확인까지 순환</div>
       </div>
 
       <div class="diagram">
@@ -1365,8 +1349,8 @@
             <text class="d-dim" x="502" y="62" text-anchor="middle">요청별 반복</text>
 
             <rect class="d-box" x="570" y="30" width="280" height="42" rx="4"></rect>
-            <text class="d-dim" x="710" y="48" text-anchor="middle" font-size="10">R1~R10 고정 파이프라인 아님 · S·M·L 규모별 게이트</text>
-            <text class="d-dim" x="710" y="62" text-anchor="middle" font-size="10">(가로 = 작업 단위, 세로 = 역할 레이어)</text>
+            <text class="d-dim" x="710" y="48" text-anchor="middle" font-size="10">요청별 기능 단위 · S/M/L 게이트</text>
+            <text class="d-dim" x="710" y="62" text-anchor="middle" font-size="10">가로=작업 · 세로=역할</text>
           </g>
 
           <g color="currentColor">
@@ -1421,7 +1405,7 @@
             <text class="d-dim" x="16" y="34" font-size="10">blackbox · publish/log · path coverage — 체크리스트·PR (blackbox 단독 merge 차단 아님)</text>
           </g>
         </svg>
-        <div class="diagram-cap">FIG.06 — S·M·L × 5 역할 레이어 (S칸·as-built·하단 시간 순 · CI 차단=lint·test·build)</div>
+        <div class="diagram-cap">FIG.06 — S/M/L × 5역할(하단=시간순·CI 게이트=lint·test·build)</div>
       </div>
 
       <div class="project-stack">

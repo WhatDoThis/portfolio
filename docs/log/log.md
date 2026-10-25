@@ -1,6 +1,8 @@
 # Log
 
 ## Log Index
+21. 2026-10-25 빈틈도구 본문 비개발자 가독성 보강
+20. 2026-10-25 빈틈도구 2차 축약 (소개·본문·FIG)
 19. 2026-10-25 GitHub Pages 배포 (ToolSite_v2·S/M/L)
 18. 2026-10-25 빈틈도구 소개 S/M/L 풀이 추가
 17. 2026-10-25 빈틈도구 impact-strip 순서 정렬
@@ -22,6 +24,18 @@
 1. 2026-09-13 GitHub Pages 배포 준비
 
 ## Log Body
+
+21. 2026-10-25 빈틈도구 본문 비개발자 가독성 보강
+Purpose: resp-grid만 plain language, lib/shared/Edge 등 축약어 제거·의미 유지
+Changes:
+- 아키텍처·에이전틱·추적·배포 bullet 재작성
+Changed files: publish/index.html
+
+20. 2026-10-25 빈틈도구 2차 축약 (소 intro·본문·FIG)
+Purpose: 중복 제거, 소개≤320자, 표 삭제, FIG 캡션·라벨 축약
+Changes:
+- project-summary·resp-grid·FIG.05·06 텍스트
+Changed files: publish/index.html
 
 19. 2026-10-25 GitHub Pages 배포 (ToolSite_v2·S/M/L)
 Purpose: 빈틈도구 v2 개편·impact-strip·S/M/L 풀이 반영
