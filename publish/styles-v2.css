@@ -474,6 +474,37 @@ a.link:hover { text-decoration-thickness: 2px; }
 }
 @media (max-width: 720px) { .project-head { grid-template-columns: 1fr; } }
 
+/* Part 03: title + links one row, meta full width on next row */
+#personal .project-head {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: stretch;
+}
+#personal .project-head-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 20px 28px;
+  align-items: baseline;
+}
+#personal .project-head-row .project-title {
+  margin-bottom: 0;
+  min-width: 0;
+}
+#personal .project-sub {
+  width: 100%;
+  row-gap: 4px;
+}
+@media (max-width: 720px) {
+  #personal .project-head-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  #personal .project-head-row .project-links {
+    padding-top: 0;
+  }
+}
+
 .project-links {
   display: flex;
   gap: 16px;

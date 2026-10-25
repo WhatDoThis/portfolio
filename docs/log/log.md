@@ -1,6 +1,7 @@
 # Log
 
 ## Log Index
+27. 2026-10-25 Part 03 project-head 2행 레이아웃
 26. 2026-10-25 GitHub Pages 배포 (Part 03 통일·AutoBlog As-Built)
 25. 2026-10-25 Part 03 impact·메타·Stack 통일
 24. 2026-10-25 AutoBlog Studio 카드 As-Built 정합
@@ -29,6 +30,13 @@
 1. 2026-09-13 GitHub Pages 배포 준비
 
 ## Log Body
+
+27. 2026-10-25 Part 03 project-head 2행 레이아웃
+Purpose: 개인 프로젝트만 제목+링크 1행·메타 전폭 2행으로 분리해 줄바꿈 왜곡 완화
+Changes:
+- publish/index.html LUA·빈틈·AutoBlog project-head-row 구조
+- publish/styles-v2.css #personal 전용 flex·grid
+Changed files: publish/index.html, publish/styles-v2.css
 
 26. 2026-10-25 GitHub Pages 배포 (Part 03 통일·AutoBlog As-Built)
 Purpose: origin/main 푸시로 GitHub Actions Pages 배포 트리거
