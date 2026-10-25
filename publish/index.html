@@ -52,7 +52,7 @@
         <div class="stat-label">공인 자격증</div>
       </div>
       <div class="stat">
-        <div class="stat-value">1</div>
+        <div class="stat-value">3</div>
         <div class="stat-label">서브 프로젝트</div>
       </div>
     </div>
@@ -143,6 +143,34 @@
     </div>
 
     <div class="timeline-list">
+      <div class="timeline-row current">
+        <div class="timeline-period">2026.10 — 지속 확장</div>
+        <div>
+          <div class="timeline-title">
+            빈틈도구 — 생활·개발 도구 웹서비스 (1인 기획·개발·운영)
+            <span class="timeline-badge" style="margin-left:6px;">개인 프로젝트</span>
+          </div>
+          <div class="timeline-meta">
+            <span class="timeline-badge primary">1인</span>
+            자체 서비스 · Vibe Coding · Cloudflare 배포 · 지속 확장
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-row">
+        <div class="timeline-period">2026.10 — 프로토타입 완료</div>
+        <div>
+          <div class="timeline-title">
+            AutoBlog Studio — 블로그 콘텐츠 자동 생성 로컬 도구 (1인 개발)
+            <span class="timeline-badge" style="margin-left:6px;">개인 프로젝트</span>
+          </div>
+          <div class="timeline-meta">
+            <span class="timeline-badge primary">1인</span>
+            Portable ZIP · LLM 계약 설계 · 상용화 목적 아님
+          </div>
+        </div>
+      </div>
+
       <div class="timeline-row current">
         <div class="timeline-period">2026.09.01 — 09.11</div>
         <div>
@@ -964,7 +992,7 @@
       <div class="part-num">PART 03</div>
       <h2 class="part-title">개인 프로젝트</h2>
       <p class="part-desc">
-        회사 업무 외로 개인이 직접 기획 · 개발 · 배포하여 클라이언트에 제공한 프로젝트입니다.
+        회사 업무 외로 직접 기획·개발·배포하여 운영 중인 프로젝트입니다.
       </p>
     </div>
 
@@ -1147,6 +1175,469 @@
         <span class="skill-tag">Nginx</span>
       </div>
     </div>
+
+    <!-- Project: 빈틈도구 -->
+    <div class="project">
+      <div class="project-head">
+        <div>
+          <h3 class="project-title">빈틈도구 — Vibe Coding 기반 1인 서비스 운영 체계</h3>
+          <div class="project-sub">
+            <span>개인 서비스 · 빈틈툴</span><span class="divider">·</span>
+            <span>2026.10.13 — 지속 확장</span><span class="divider">·</span>
+            <span>1인 전담</span><span class="divider">·</span>
+            <span>기획 · 설계 · 개발 · 배포 · 운영</span>
+            <span class="status">지속 확장</span>
+          </div>
+        </div>
+        <div class="project-links">
+          <a href="https://binteumtool.com/" target="_blank" rel="noopener">
+            <span class="link-label">Live</span>binteumtool.com ↗
+          </a>
+        </div>
+      </div>
+
+      <p class="project-summary">
+        <strong>빈틈툴(binteumtool.com)</strong> — Next.js·Cloudflare Workers 생활·개발 도구. 계산은 브라우저 순수 함수만, 민감 입력은 서버로 보내지 않습니다.
+        Rules · Skills · As-Built(<strong>publish · log</strong>)를 정본으로 두고 블랙박스 · 오케스트레이터 · 코드 검증 · 코드 · 문서 역할을 분리한 Vibe Coding을 <strong>운영 서비스</strong>에 적용했습니다.
+        요청마다 <strong>S / M / L</strong>을 선언하고, CI가 deploy를 자동 막는 항목은 <strong>lint · test · build</strong>뿐입니다. UX(M/L)는 blackbox·path coverage·As-Built를 운영 규칙으로 보강합니다(Pivot·UX는 구현 후 blackbox 가능, blackbox 단독 merge 차단 아님).
+      </p>
+
+      <div class="impact-strip">
+        <div class="impact-cell">
+          <div class="impact-num">1인</div>
+          <div class="impact-desc">에이전트 분업 운영</div>
+        </div>
+        <div class="impact-cell">
+          <div class="impact-num">326건</div>
+          <div class="impact-desc">자동화 테스트</div>
+        </div>
+        <div class="impact-cell">
+          <div class="impact-num">5층</div>
+          <div class="impact-desc">검증·에이전트 레이어</div>
+        </div>
+        <div class="impact-cell">
+          <div class="impact-num">0</div>
+          <div class="impact-desc">서버 저장 개인정보</div>
+        </div>
+      </div>
+
+      <div class="resp-grid">
+        <div class="resp-label">아키텍처</div>
+        <div class="resp-content">
+          <ul>
+            <li>회원·서버 저장·계산 API 없이 <strong>클라이언트 연산</strong> 중심 — 서버는 조회수(경로 단위)·정적 자산·SEO만 담당</li>
+            <li>상태는 localStorage·URL Hash 규격, 도구 간 공유는 읽기 전용 · 계산 모듈 간 상호 참조 금지</li>
+            <li>외부 의존(DB·광고·공공데이터) 부재 시 <strong>기능 축소</strong>로 끝나도록 설계 (장애 전파 방지)</li>
+          </ul>
+        </div>
+
+        <div class="resp-label">AI 에이전트 · S/M/L</div>
+        <div class="resp-content">
+          <ul>
+            <li>고정 R1~R10 파이프라인 아님 — 계획 첫 줄에 <strong>S / M / L</strong> · <strong>S0</strong>는 <code>docs/main</code> 설계 피벗(DECISIONS 재조사 금지)</li>
+            <li><strong>S</strong> (문구·1~3파일): lint · 관련 test · <strong>M</strong> (기능 1개·≤10파일): lint · test · build · <strong>L</strong> (다중 섹션·라우트): 섹션마다 lint · test · build</li>
+            <li><strong>블랙박스</strong> — PC 1280 / 모바일 375 UX·rubric, 코드 수정 금지 · UX(M/L)는 원칙상 선행(Pivot·UX → 구현 후 blackbox, merge 단독 차단 아님)</li>
+            <li><strong>오케스트레이터</strong> — 에이전트 선정 · gap 순서 · <strong>path coverage 6단계</strong>(사람 검토 생략 시 필수) · 서브에이전트 동시 최대 2 · 경로 겹치면 금지</li>
+            <li><strong>시간 순(M/L·UX)</strong> blackbox → 구현 → path coverage → lint · test · build → As-Built · log · Rules/Skills(변경 시)</li>
+            <li>코드 검증은 로컬·GitHub Actions 공통 <strong>lint · test · build</strong> · 테스트 선행 · 326건 자동화(Vitest)</li>
+          </ul>
+        </div>
+
+        <div class="resp-label">문서 정본</div>
+        <div class="resp-content">
+          <ul>
+            <li><strong>구현 전·계약</strong> <code>docs/main</code> · <code>docs/order</code> · <strong>배포 동작(as-built)</strong> publish 레지스트리 · <strong>UX·타당성</strong> report · <strong>완료 근거</strong> log(명령·exit code)</li>
+            <li>라우트·API 행 단위(경로 · 렌더 · 저장소 · 배포 · 대표 test) · As-Built는 히스토리 금지·변경 절만 갱신</li>
+            <li>코드 에이전트는 URL·storage·UI·lib 사실을 publish·As-Built에 흡수 — PRD 본문에 과거 감사·히스토리 넣지 않음 · 문서 레이어 <strong>publish · log · Rules · Skills</strong></li>
+          </ul>
+        </div>
+
+        <div class="resp-label">Cloudflare · CI</div>
+        <div class="resp-content">
+          <ul>
+            <li><strong>Workers + OpenNext</strong> 배포, 초기 런타임 이슈 빌드 후처리 · <strong>binteumtool.com</strong> 도메인 · <strong>Rate Limiting</strong></li>
+            <li>GitHub Actions <strong>lint · test · build</strong> 통과 후 deploy · 배포 후 버전·응답 헤더 확인 · 공휴일·기준 데이터는 CI 주간 갱신(브라우저 아님) · push·배포는 사용자 명시 시만</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="diagram">
+        <svg viewBox="0 0 860 165" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="arr-bint-05" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 0 L 10 5 L 0 10 z" fill="currentColor"></path>
+            </marker>
+          </defs>
+
+          <text class="d-dim" x="10" y="18" font-size="10" letter-spacing="0.05em">DEVELOPMENT · DEPLOY LOOP</text>
+
+          <g>
+            <rect class="d-box-accent" x="10" y="28" width="98" height="44" rx="4"></rect>
+            <text class="d-label" x="59" y="46" text-anchor="middle" font-size="10">설계 문서</text>
+            <text class="d-dim" x="59" y="60" text-anchor="middle">정본</text>
+
+            <rect class="d-box" x="116" y="28" width="98" height="44" rx="4"></rect>
+            <text class="d-label" x="165" y="46" text-anchor="middle" font-size="10">에이전트</text>
+            <text class="d-dim" x="165" y="60" text-anchor="middle">문서 / 코드</text>
+
+            <rect class="d-box" x="222" y="28" width="98" height="44" rx="4"></rect>
+            <text class="d-label" x="271" y="46" text-anchor="middle" font-size="10">검증 게이트</text>
+            <text class="d-dim" x="271" y="60" text-anchor="middle">blackbox · path</text>
+
+            <rect class="d-box" x="328" y="28" width="98" height="44" rx="4"></rect>
+            <text class="d-label" x="377" y="46" text-anchor="middle" font-size="10">Git Push</text>
+            <text class="d-dim" x="377" y="60" text-anchor="middle">저장소 반영</text>
+
+            <rect class="d-box" x="434" y="28" width="98" height="44" rx="4"></rect>
+            <text class="d-label" x="483" y="46" text-anchor="middle" font-size="10">CI</text>
+            <text class="d-dim" x="483" y="60" text-anchor="middle">lint · test · build</text>
+
+            <rect class="d-box" x="540" y="28" width="98" height="44" rx="4"></rect>
+            <text class="d-label" x="589" y="46" text-anchor="middle" font-size="10">Workers</text>
+            <text class="d-dim" x="589" y="60" text-anchor="middle">OpenNext</text>
+
+            <rect class="d-box" x="646" y="28" width="98" height="44" rx="4"></rect>
+            <text class="d-label" x="695" y="46" text-anchor="middle" font-size="10">운영</text>
+            <text class="d-dim" x="695" y="60" text-anchor="middle">도메인 · RL</text>
+
+            <rect class="d-box" x="752" y="28" width="98" height="44" rx="4"></rect>
+            <text class="d-label" x="801" y="46" text-anchor="middle" font-size="10">상태 확인</text>
+            <text class="d-dim" x="801" y="60" text-anchor="middle">헤더 · 버전</text>
+          </g>
+
+          <g color="currentColor">
+            <path class="d-line-accent" d="M 108 50 L 114 50" marker-end="url(#arr-bint-05)"></path>
+            <path class="d-line-accent" d="M 214 50 L 220 50" marker-end="url(#arr-bint-05)"></path>
+            <path class="d-line-accent" d="M 320 50 L 326 50" marker-end="url(#arr-bint-05)"></path>
+            <path class="d-line-accent" d="M 426 50 L 432 50" marker-end="url(#arr-bint-05)"></path>
+            <path class="d-line-accent" d="M 532 50 L 538 50" marker-end="url(#arr-bint-05)"></path>
+            <path class="d-line-accent" d="M 638 50 L 644 50" marker-end="url(#arr-bint-05)"></path>
+            <path class="d-line-accent" d="M 744 50 L 750 50" marker-end="url(#arr-bint-05)"></path>
+            <path class="d-line" d="M 801 72 C 801 95, 59 95, 59 72" marker-end="url(#arr-bint-05)"></path>
+          </g>
+
+          <text class="d-dim" x="400" y="118" text-anchor="middle" font-size="10">순환 — 다음 작업 사이클은 설계 문서(정본) 갱신부터 재개</text>
+        </svg>
+        <div class="diagram-cap">FIG.05 — 개발·배포 루프 (설계 정본 → 에이전트 → 검증 → Git · CI → Workers → 도메인·Rate Limit → 상태 확인)</div>
+      </div>
+
+      <div class="diagram">
+        <svg viewBox="0 0 860 268" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="arr-bint-06" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 0 L 10 5 L 0 10 z" fill="currentColor"></path>
+            </marker>
+          </defs>
+
+          <text class="d-dim" x="10" y="20" font-size="10" letter-spacing="0.05em">HORIZONTAL — S0 피벗 → S · M · L 기능 단위</text>
+
+          <g>
+            <rect class="d-box-accent" x="10" y="30" width="88" height="42" rx="4"></rect>
+            <text class="d-label" x="54" y="48" text-anchor="middle" font-size="10">S0</text>
+            <text class="d-dim" x="54" y="62" text-anchor="middle">설계 피벗</text>
+
+            <rect class="d-box-accent" x="106" y="30" width="72" height="42" rx="4"></rect>
+            <text class="d-label" x="142" y="48" text-anchor="middle" font-size="11">S</text>
+            <text class="d-dim" x="142" y="62" text-anchor="middle" font-size="9">카피·소규모</text>
+
+            <rect class="d-box-accent" x="186" y="30" width="120" height="42" rx="4"></rect>
+            <text class="d-label" x="246" y="48" text-anchor="middle" font-size="11">M</text>
+            <text class="d-dim" x="246" y="62" text-anchor="middle">기능 1개</text>
+
+            <rect class="d-box-accent" x="314" y="30" width="120" height="42" rx="4"></rect>
+            <text class="d-label" x="374" y="48" text-anchor="middle" font-size="11">L</text>
+            <text class="d-dim" x="374" y="62" text-anchor="middle">UX·다파일</text>
+
+            <rect class="d-box-accent" x="442" y="30" width="120" height="42" rx="4"></rect>
+            <text class="d-label" x="502" y="48" text-anchor="middle" font-size="11">S · M · L …</text>
+            <text class="d-dim" x="502" y="62" text-anchor="middle">요청별 반복</text>
+
+            <rect class="d-box" x="570" y="30" width="280" height="42" rx="4"></rect>
+            <text class="d-dim" x="710" y="48" text-anchor="middle" font-size="10">R1~R10 고정 파이프라인 아님 · S·M·L 규모별 게이트</text>
+            <text class="d-dim" x="710" y="62" text-anchor="middle" font-size="10">(가로 = 작업 단위, 세로 = 역할 레이어)</text>
+          </g>
+
+          <g color="currentColor">
+            <path class="d-line-accent" d="M 98 51 L 104 51" marker-end="url(#arr-bint-06)"></path>
+            <path class="d-line-accent" d="M 178 51 L 184 51" marker-end="url(#arr-bint-06)"></path>
+            <path class="d-line-accent" d="M 306 51 L 312 51" marker-end="url(#arr-bint-06)"></path>
+            <path class="d-line-accent" d="M 434 51 L 440 51" marker-end="url(#arr-bint-06)"></path>
+            <path class="d-line-accent" d="M 562 51 L 568 51" marker-end="url(#arr-bint-06)"></path>
+          </g>
+
+          <text class="d-dim" x="10" y="115" font-size="10" letter-spacing="0.05em">VERTICAL — 역할 레이어 (좌→우 = 역할 구분 · 시간 순 ≠ 좌→우)</text>
+
+          <g>
+            <rect class="d-box" x="10" y="125" width="160" height="44" rx="4"></rect>
+            <text class="d-label" x="90" y="143" text-anchor="middle" font-size="11">블랙박스</text>
+            <text class="d-dim" x="90" y="159" text-anchor="middle" font-size="10">UX · 수정 금지</text>
+
+            <rect class="d-box" x="180" y="125" width="160" height="44" rx="4"></rect>
+            <text class="d-label" x="260" y="143" text-anchor="middle" font-size="11">오케스트레이터</text>
+            <text class="d-dim" x="260" y="159" text-anchor="middle" font-size="10">path 6단계</text>
+
+            <rect class="d-box" x="350" y="125" width="160" height="44" rx="4"></rect>
+            <text class="d-label" x="430" y="143" text-anchor="middle" font-size="11">코드 검증</text>
+            <text class="d-dim" x="430" y="159" text-anchor="middle" font-size="10">lint · test · build</text>
+
+            <rect class="d-box" x="520" y="125" width="160" height="44" rx="4"></rect>
+            <text class="d-label" x="600" y="143" text-anchor="middle" font-size="11">코드 에이전트</text>
+            <text class="d-dim" x="600" y="159" text-anchor="middle" font-size="10">구현 · as-built</text>
+
+            <rect class="d-box" x="690" y="125" width="160" height="44" rx="4"></rect>
+            <text class="d-label" x="770" y="143" text-anchor="middle" font-size="11">문서</text>
+            <text class="d-dim" x="770" y="153" text-anchor="middle" font-size="9">publish · log</text>
+            <text class="d-dim" x="770" y="165" text-anchor="middle" font-size="9">Rules · Skills</text>
+          </g>
+
+          <g color="currentColor">
+            <path class="d-line" d="M 170 147 L 178 147" marker-end="url(#arr-bint-06)"></path>
+            <path class="d-line" d="M 340 147 L 348 147" marker-end="url(#arr-bint-06)"></path>
+            <path class="d-line" d="M 510 147 L 518 147" marker-end="url(#arr-bint-06)"></path>
+            <path class="d-line" d="M 680 147 L 688 147" marker-end="url(#arr-bint-06)"></path>
+          </g>
+
+          <g transform="translate(10, 178)">
+            <rect class="d-box" x="0" y="0" width="840" height="28" rx="4"></rect>
+            <text class="d-dim" x="16" y="18" font-size="10">시간 순(M/L·UX): blackbox → 구현 → path 6단계 → lint · test · build → publish · log · Rules/Skills (Pivot·UX: 구현→blackbox)</text>
+          </g>
+
+          <g transform="translate(10, 212)">
+            <rect class="d-box" x="0" y="0" width="840" height="42" rx="4"></rect>
+            <text x="16" y="18" font-size="11" fill="var(--accent)" font-weight="600">게이트</text>
+            <text class="d-label" x="60" y="18" font-size="11">CI deploy 자동 차단: lint · test · build 만</text>
+            <text class="d-dim" x="16" y="34" font-size="10">blackbox · publish/log · path coverage — 체크리스트·PR (blackbox 단독 merge 차단 아님)</text>
+          </g>
+        </svg>
+        <div class="diagram-cap">FIG.06 — S·M·L 작업 단위 × 역할 레이어 (세로=역할 구분, 하단=시간 순 · CI 자동 차단은 lint · test · build)</div>
+      </div>
+
+      <div class="project-stack">
+        <span class="label">Stack</span>
+        <span class="skill-tag strong">Next.js</span>
+        <span class="skill-tag strong">TypeScript</span>
+        <span class="skill-tag strong">Cloudflare Workers</span>
+        <span class="skill-tag">OpenNext</span>
+        <span class="skill-tag">Wrangler</span>
+        <span class="skill-tag">Cloudflare D1</span>
+        <span class="skill-tag">GitHub Actions</span>
+        <span class="skill-tag">Vitest</span>
+        <span class="skill-tag">Lighthouse</span>
+        <span class="skill-tag">Chrome DevTools Protocol</span>
+        <span class="skill-tag strong">Cursor AI (Rules · Skills)</span>
+      </div>
+    </div>
+
+    <!-- Project: AutoBlog Studio -->
+    <div class="project">
+      <div class="project-head">
+        <div>
+          <h3 class="project-title">AutoBlog Studio — 로컬 설치형 블로그 콘텐츠 생성 도구</h3>
+          <div class="project-sub">
+            <span>개인 프로젝트</span><span class="divider">·</span>
+            <span>2026.10 — 프로토타입 완료</span><span class="divider">·</span>
+            <span>1인 전담</span><span class="divider">·</span>
+            <span>기획 · 설계 · 개발 · 패키징</span>
+            <span class="status">프로토타입</span>
+          </div>
+        </div>
+        <div class="project-links">
+          <span style="font-size:13px; color:var(--fg-2);"><span class="link-label">배포</span>Portable ZIP (로컬 실행 · 공개 URL 없음)</span>
+        </div>
+      </div>
+
+      <p class="project-summary">
+        본인 소유 블로그의 기존 글을 분석해 같은 결의 신규 글 초안과 이미지를 만들고, 에디터에 붙여넣을 수 있는 묶음 폴더로 내보내는 <strong>Windows 로컬 전용</strong> 도구입니다.
+        클라우드 DB·중앙 시크릿 없이 데이터는 사용자 PC에만 두고, <strong>자동 게시 대신 수동 게시</strong>로 플랫폼 정책 위험을 줄였습니다.
+        <strong>프로토타입 단계에서 기능·검증 루프는 동작 확인을 마쳤으며</strong>, 상용 SaaS·대량 자동 게시 목적은 아닙니다. 핵심 과제는 모델이 바뀌어도 같은 형태의 결과가 나오도록 <strong>LLM 출력 계약</strong>을 설계하는 일이었습니다.
+      </p>
+
+      <div class="impact-strip">
+        <div class="impact-cell">
+          <div class="impact-num">3계층</div>
+          <div class="impact-desc">LLM 출력 방어 구조</div>
+        </div>
+        <div class="impact-cell">
+          <div class="impact-num">10종</div>
+          <div class="impact-desc">허용 블록 타입 단일 출처</div>
+        </div>
+        <div class="impact-cell">
+          <div class="impact-num">5단계</div>
+          <div class="impact-desc">제작 마법사 · 선행조건 검사</div>
+        </div>
+        <div class="impact-cell">
+          <div class="impact-num">0</div>
+          <div class="impact-desc">클라우드 저장 · 키 응답 반환</div>
+        </div>
+      </div>
+
+      <div class="resp-grid">
+        <div class="resp-label">LLM 출력 계약</div>
+        <div class="resp-content">
+          <ul>
+            <li>프롬프트 나열 대신 <strong>계약 파일 + JSON Schema + 검증 코드</strong>로 출력 규격 고정</li>
+            <li>1차: 엄격 스키마·structured output, 미지원 모델은 완화 모드 폴백 · 2차: 계약 규칙을 시스템 프롬프트 주입</li>
+            <li>3차: 파싱 후 별칭 보정·빈 필드 복구 → 블록 검증 통과 여부로 최종 판정 · 실패 시 생성 거부</li>
+            <li>허용 블록 타입은 상수 모듈 한 곳만 정의 · 모델별 오타·별칭은 코드가 아닌 <strong>계약 파일</strong>에 추가</li>
+          </ul>
+        </div>
+
+        <div class="resp-label">주제 생성 체인</div>
+        <div class="resp-content">
+          <ul>
+            <li>단일 호출이 아닌 <strong>색인 갱신 → 수집 가능 판정 → 스타일 학습 → 주제 제안 → 규칙 검증</strong> 단계 체인</li>
+            <li>수집 0건이면 체인 중단·수동 입력 유도 · 기존 제목에서 반복 틀을 통계 추론해 같은 형식만 허용</li>
+            <li>맥락 이탈·홍보성 문구형 제목 자동 거부 후 재시도 · 토큰 겹침 임계 초과 시 중복 판정·재생성</li>
+            <li>특정 블로그 하드코딩 없이, 설정된 게시판 데이터만으로 맥락 구성</li>
+          </ul>
+        </div>
+
+        <div class="resp-label">로컬 아키텍처</div>
+        <div class="resp-content">
+          <ul>
+            <li>로컬 웹 UI + 로컬 API, 외부 바인딩 기본 비활성 · API 키는 사용자 폴더 파일에만 저장(응답·로그 미포함)</li>
+            <li>이름 붙은 설정 프로필로 복수 대상 전환 · 색인·스타일은 게시판·블로그 키별 분리</li>
+            <li>설정된 소유 블로그와 다른 URL은 서버에서 거부</li>
+            <li>설정 / 색인 / 스타일 / 콘텐츠 / 템플릿 / 이미지 / 내보내기 / 인프라 / 공용 도메인 디렉터리로 영향 범위 고정</li>
+          </ul>
+        </div>
+
+        <div class="resp-label">Portable · 검증</div>
+        <div class="resp-content">
+          <ul>
+            <li>실행 파일 하나로 런타임 준비·의존성·서버 기동 자동 처리 · <strong>Portable ZIP</strong> 빌드(버전 자동 증가, 경량/전체 프로필)</li>
+            <li>배포 ZIP에 DB·API 키·사용자 산출물 미포함 · 별도 검증 CLI(헬스 → 계약 존재 → 방어 스모크 → 테스트 일부)</li>
+            <li>기능 변경 시 검증 명령 통과를 작업 완료 게이트로 운영</li>
+          </ul>
+        </div>
+
+        <div class="resp-label">에이전트 규칙</div>
+        <div class="resp-content">
+          <ul>
+            <li>작업 지시를 <strong>규칙 파일(alwaysApply)</strong>로 고정 · 구현 전 코드·현황 문서 선독 → 갭 요약 → <strong>자체 제안 2건 이상</strong> 후 구현</li>
+            <li>사용자 나열 항목만 옮기기·제안 생략 금지 · <strong>도입 점수표</strong>(효과·비용·데이터·정합 4축): 효과 4+ &amp; 합 14+일 때만 채택</li>
+            <li>현황 문서는 히스토리 금지·현재 동작만·변경 절만 갱신</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="diagram">
+        <svg viewBox="0 0 860 200" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="arr-ab-07" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 0 L 10 5 L 0 10 z" fill="currentColor"></path>
+            </marker>
+          </defs>
+
+          <text class="d-dim" x="10" y="18" font-size="10" letter-spacing="0.05em">LLM OUTPUT — 3-LAYER DEFENSE</text>
+
+          <g transform="translate(40, 32)">
+            <rect class="d-box-accent" x="0" y="0" width="280" height="40" rx="4"></rect>
+            <text class="d-label" x="140" y="18" text-anchor="middle" font-size="11">1차 — 응답 형식 강제</text>
+            <text class="d-dim" x="140" y="32" text-anchor="middle" font-size="10">JSON Schema · structured output</text>
+          </g>
+          <g transform="translate(40, 82)">
+            <rect class="d-box" x="0" y="0" width="280" height="40" rx="4"></rect>
+            <text class="d-label" x="140" y="18" text-anchor="middle" font-size="11">2차 — 계약 규칙 주입</text>
+            <text class="d-dim" x="140" y="32" text-anchor="middle" font-size="10">시스템 프롬프트</text>
+          </g>
+          <g transform="translate(40, 132)">
+            <rect class="d-box" x="0" y="0" width="280" height="40" rx="4"></rect>
+            <text class="d-label" x="140" y="18" text-anchor="middle" font-size="11">3차 — 파싱 보정 · 블록 검증</text>
+            <text class="d-dim" x="140" y="32" text-anchor="middle" font-size="10">별칭 · 빈 필드 복구</text>
+          </g>
+
+          <g color="currentColor">
+            <path class="d-line-accent" d="M 180 72 L 180 82" marker-end="url(#arr-ab-07)"></path>
+            <path class="d-line-accent" d="M 180 122 L 180 132" marker-end="url(#arr-ab-07)"></path>
+            <path class="d-line" d="M 320 152 L 400 152" marker-end="url(#arr-ab-07)"></path>
+          </g>
+
+          <g transform="translate(400, 132)">
+            <rect class="d-box" x="0" y="0" width="160" height="40" rx="4"></rect>
+            <text class="d-label" x="80" y="18" text-anchor="middle" font-size="11">통과</text>
+            <text class="d-dim" x="80" y="32" text-anchor="middle" font-size="10">콘텐츠 확정</text>
+          </g>
+
+          <g transform="translate(400, 72)">
+            <rect class="d-box" x="0" y="0" width="160" height="40" rx="4" stroke-dasharray="4 3"></rect>
+            <text class="d-label" x="80" y="18" text-anchor="middle" font-size="11">검증 실패</text>
+            <text class="d-dim" x="80" y="32" text-anchor="middle" font-size="10">생성 거부</text>
+          </g>
+
+          <path class="d-line" d="M 320 92 L 400 92" marker-end="url(#arr-ab-07)"></path>
+
+          <text class="d-dim" x="580" y="60" font-size="10">허용 블록 타입</text>
+          <text class="d-dim" x="580" y="76" font-size="10">→ 단일 상수 모듈</text>
+        </svg>
+        <div class="diagram-cap">FIG.07 — LLM 출력 3계층 방어 (Schema → 계약 주입 → 검증 · 실패 시 생성 거부)</div>
+      </div>
+
+      <div class="diagram">
+        <svg viewBox="0 0 860 165" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="arr-ab-08" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 0 L 10 5 L 0 10 z" fill="currentColor"></path>
+            </marker>
+          </defs>
+
+          <text class="d-dim" x="10" y="18" font-size="10" letter-spacing="0.05em">TOPIC GENERATION CHAIN</text>
+
+          <g transform="translate(10, 30)">
+            <rect class="d-box" x="0" y="0" width="100" height="44" rx="4"></rect>
+            <text class="d-label" x="50" y="28" text-anchor="middle" font-size="10">색인 갱신</text>
+
+            <rect class="d-box-accent" x="112" y="0" width="108" height="44" rx="4"></rect>
+            <text class="d-label" x="166" y="22" text-anchor="middle" font-size="10">수집 가능</text>
+            <text class="d-dim" x="166" y="36" text-anchor="middle" font-size="9">게이트</text>
+
+            <rect class="d-box" x="232" y="0" width="100" height="44" rx="4"></rect>
+            <text class="d-label" x="282" y="28" text-anchor="middle" font-size="10">스타일 학습</text>
+
+            <rect class="d-box" x="344" y="0" width="100" height="44" rx="4"></rect>
+            <text class="d-label" x="394" y="28" text-anchor="middle" font-size="10">주제 제안</text>
+
+            <rect class="d-box-accent" x="456" y="0" width="100" height="44" rx="4"></rect>
+            <text class="d-label" x="506" y="28" text-anchor="middle" font-size="10">규칙 검증</text>
+          </g>
+
+          <g color="currentColor">
+            <path class="d-line-accent" d="M 110 52 L 112 52" marker-end="url(#arr-ab-08)"></path>
+            <path class="d-line-accent" d="M 220 52 L 232 52" marker-end="url(#arr-ab-08)"></path>
+            <path class="d-line-accent" d="M 332 52 L 344 52" marker-end="url(#arr-ab-08)"></path>
+            <path class="d-line-accent" d="M 444 52 L 456 52" marker-end="url(#arr-ab-08)"></path>
+            <path class="d-line" d="M 506 74 C 506 98, 394 98, 394 74" marker-end="url(#arr-ab-08)"></path>
+          </g>
+
+          <g transform="translate(166, 88)">
+            <rect class="d-box" x="0" y="0" width="200" height="36" rx="4"></rect>
+            <text class="d-dim" x="100" y="22" text-anchor="middle" font-size="10">수집 0건 → 수동 입력 전환</text>
+          </g>
+
+          <path class="d-line" d="M 166 74 L 166 88" marker-end="url(#arr-ab-08)"></path>
+
+          <text class="d-dim" x="580" y="58" font-size="10">형식·중복 위반</text>
+          <text class="d-dim" x="580" y="72" font-size="10">→ 주제 제안 재시도</text>
+        </svg>
+        <div class="diagram-cap">FIG.08 — 주제 생성 체인 (수집 게이트 · 규칙 검증 실패 시 재시도)</div>
+      </div>
+
+      <div class="project-stack">
+        <span class="label">Stack</span>
+        <span class="skill-tag strong">Python</span>
+        <span class="skill-tag strong">FastAPI</span>
+        <span class="skill-tag strong">SQLite</span>
+        <span class="skill-tag">OpenRouter API</span>
+        <span class="skill-tag">JSON Schema</span>
+        <span class="skill-tag">Structured Output</span>
+        <span class="skill-tag">Vision 검증</span>
+        <span class="skill-tag">PowerShell</span>
+        <span class="skill-tag">PyInstaller</span>
+        <span class="skill-tag">Portable ZIP</span>
+        <span class="skill-tag">pytest</span>
+        <span class="skill-tag strong">Cursor AI (Rules · Subagent)</span>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -1209,6 +1700,15 @@
           <li>Validate — 응답의 코드 재검증</li>
           <li>Reuse — 필터 · Tool 재사용</li>
           <li>Trace — Neo4j 이력 추적</li>
+        </ul>
+      </div>
+
+      <div class="about-item">
+        <h3>규칙 기반 에이전트 운영</h3>
+        <p>작업 지시를 대화가 아닌 저장소 규칙 파일로 고정하고, 에이전트가 요구사항을 코드로 옮기기 전에 기존 코드와 현황 문서를 먼저 읽도록 강제합니다.</p>
+        <ul>
+          <li>신규 규칙·기능은 효과 · 비용 · 데이터 · 정합 4축 점수로 채택 여부 판정</li>
+          <li>검증 명령이 통과해야만 작업을 완료로 인정</li>
         </ul>
       </div>
     </div>

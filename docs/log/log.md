@@ -1,6 +1,12 @@
 # Log
 
 ## Log Index
+12. 2026-10-25 Part 03 AutoBlog Studio 카드 추가
+11. 2026-10-25 빈틈도구 AgenticWorkflow 정본 정합·port 제거
+10. 2026-10-25 빈틈도구 FIG·본문 정합 (BINTEUM 제거, S/M/L)
+9. 2026-10-25 빈틈도구 명칭·FIG·Workers 배포 사실 반영
+8. 2026-10-25 BINTEUM 카드 축약·Live·지속 확장 표기
+7. 2026-10-25 Part 03 빈틈(BINTEUM) 프로젝트 카드 추가
 6. 2026-10-21 LG U+ 요약 줄바꿈 및 SQL LLM FIG.02 추가
 5. 2026-10-21 LG U+ 프로젝트 상세 역할 반영
 4. 2026-10-02 목차로 돌아가는 버튼 추가
@@ -9,6 +15,42 @@
 1. 2026-09-13 GitHub Pages 배포 준비
 
 ## Log Body
+
+12. 2026-10-25 Part 03 AutoBlog Studio 카드 추가
+Purpose: AutoBlog.md 기준 프로토타입·Portable ZIP·FIG.07·08·방법론 5번째 카드·서브 프로젝트 3
+Changes:
+- 빈틈 아래 AutoBlog 카드, 타임라인, stats 3, 민감정보 일반화 표현
+Changed files: publish/index.html
+
+11. 2026-10-25 빈틈도구 AgenticWorkflow 정본 정합·port 제거
+Purpose: docs/add/ToolSite_AgenticWorkflow.md 기준으로 소개·본문·FIG.05·06 동기화, 공개 문구에서 port 제거
+Changes:
+- S/M/L·S0·path 6단계·시간 순·게이트 표와 일치, publish · log · Rules · Skills
+Changed files: publish/index.html
+
+10. 2026-10-25 빈틈도구 FIG·본문 정합 (BINTEUM 제거, S/M/L)
+Purpose: 명칭 정정, FIG.05·06 S축·역할/시간 순·lint·test·build 통일, ToolSite 보완
+Changes:
+- BINTEUM 제거, resp-grid 4블록 보강, FIG.06 S·M·L·시간순 박스
+Changed files: publish/index.html
+
+9. 2026-10-25 빈틈도구 명칭·FIG·Workers 배포 사실 반영
+Purpose: binteumtool.com Live, FIG.06 as-built 정합, Preview 오기 수정
+Changes:
+- 빈틈→빈틈도구, Workers·Rate Limit·S/M/L 워크플로, FIG.05·06 갱신
+Changed files: publish/index.html
+
+8. 2026-10-25 BINTEUM 카드 축약·Live·지속 확장 표기
+Purpose: 에이전트 중심으로 카피 축약, Live 링크 추가, 진행중→지속 확장
+Changes:
+- 요약·resp-grid·impact-strip 간소화, project-links Live binteum.com
+Changed files: publish/index.html
+
+7. 2026-10-25 Part 03 빈틈(BINTEUM) 프로젝트 카드 추가
+Purpose: ToolSite.md 스펙에 따라 개인 프로젝트 섹션에 BINTEUM 카드·타임라인·stats 반영
+Changes:
+- #personal LUA 하단 BINTEUM 카드, FIG.05·FIG.06, experience·stats-bar·part-desc 수정
+Changed files: publish/index.html
 
 6. 2026-10-21 LG U+ 요약 줄바꿈 및 SQL LLM FIG.02 추가
 Purpose: Target/Campaign 요약 가독성 개선 및 Campaign SQL LLM PoC 아키텍처 시각화
