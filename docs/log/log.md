@@ -1,6 +1,7 @@
 # Log
 
 ## Log Index
+26. 2026-10-25 GitHub Pages 배포 (Part 03 통일·AutoBlog As-Built)
 25. 2026-10-25 Part 03 impact·메타·Stack 통일
 24. 2026-10-25 AutoBlog Studio 카드 As-Built 정합
 23. 2026-10-25 docs/add 요약방식정의.md 표준 체크리스트 작성
@@ -28,6 +29,12 @@
 1. 2026-09-13 GitHub Pages 배포 준비
 
 ## Log Body
+
+26. 2026-10-25 GitHub Pages 배포 (Part 03 통일·AutoBlog As-Built)
+Purpose: origin/main 푸시로 GitHub Actions Pages 배포 트리거
+Changes:
+- commit ba66e99 → https://whatdothis.github.io/portfolio/
+Changed files: (배포) publish/index.html
 
 25. 2026-10-25 Part 03 impact·메타·Stack 통일
 Purpose: 3프로젝트 impact 1칸·부가설명 통일, 빈틈 17+ 도구, LUA·AutoBlog 메타·소개
