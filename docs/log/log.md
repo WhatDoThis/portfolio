@@ -1,6 +1,7 @@
 # Log
 
 ## Log Index
+19. 2026-10-25 GitHub Pages 배포 (ToolSite_v2·S/M/L)
 18. 2026-10-25 빈틈도구 소개 S/M/L 풀이 추가
 17. 2026-10-25 빈틈도구 impact-strip 순서 정렬
 16. 2026-10-25 빈틈도구 섹션 ToolSite_v2 개편
@@ -21,6 +22,12 @@
 1. 2026-09-13 GitHub Pages 배포 준비
 
 ## Log Body
+
+19. 2026-10-25 GitHub Pages 배포 (ToolSite_v2·S/M/L)
+Purpose: 빈틈도구 v2 개편·impact-strip·S/M/L 풀이 반영
+Changes:
+- commit 376f397 push main
+Changed files: (deploy only)
 
 18. 2026-10-25 빈틈도구 소개 S/M/L 풀이 추가
 Purpose: 소개글 S/M/L 최초 등장에 작은 수정/기능 단위/다면 변경 병기
