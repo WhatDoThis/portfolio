@@ -1023,20 +1023,16 @@
 
       <div class="impact-strip">
         <div class="impact-cell">
+          <div class="impact-num">1명</div>
+          <div class="impact-desc">AI 에이전트 활용</div>
+        </div>
+        <div class="impact-cell">
           <div class="impact-num">1.5주</div>
           <div class="impact-desc">기획 → 오픈</div>
         </div>
         <div class="impact-cell">
           <div class="impact-num">34페이지</div>
           <div class="impact-desc">한/영 정적 생성</div>
-        </div>
-        <div class="impact-cell">
-          <div class="impact-num">1명</div>
-          <div class="impact-desc">AI 에이전트 활용</div>
-        </div>
-        <div class="impact-cell">
-          <div class="impact-num">$0</div>
-          <div class="impact-desc">런타임 백엔드 비용</div>
         </div>
       </div>
 
@@ -1208,16 +1204,12 @@
           <div class="impact-desc">에이전트 분업 운영</div>
         </div>
         <div class="impact-cell">
-          <div class="impact-num">326건</div>
-          <div class="impact-desc">자동화 테스트</div>
+          <div class="impact-num">27페이지</div>
+          <div class="impact-desc">활성 라우트·연년</div>
         </div>
         <div class="impact-cell">
           <div class="impact-num">5층</div>
           <div class="impact-desc">검증·에이전트 레이어</div>
-        </div>
-        <div class="impact-cell">
-          <div class="impact-num">0</div>
-          <div class="impact-desc">서버 저장 개인정보</div>
         </div>
       </div>
 
@@ -1449,25 +1441,23 @@
       <p class="project-summary">
         본인 소유 블로그의 기존 글을 분석해 같은 결의 신규 글 초안과 이미지를 만들고, 에디터에 붙여넣을 수 있는 묶음 폴더로 내보내는 <strong>Windows 로컬 전용</strong> 도구입니다.
         클라우드 DB·중앙 시크릿 없이 데이터는 사용자 PC에만 두고, <strong>자동 게시 대신 수동 게시</strong>로 플랫폼 정책 위험을 줄였습니다.
-        <strong>프로토타입 단계에서 기능·검증 루프는 동작 확인을 마쳤으며</strong>, 상용 SaaS·대량 자동 게시 목적은 아닙니다. 핵심 과제는 모델이 바뀌어도 같은 형태의 결과가 나오도록 <strong>LLM 출력 계약</strong>을 설계하는 일이었습니다.
+        <strong>프로토타입 단계에서 기능·검증 루프는 동작 확인을 마쳤으며</strong>, 상용 SaaS·대량 자동 게시 목적은 아닙니다.
+        클라우드 DB·중앙 시크릿·API 키를 응답·로그에 넣지 않고, 허용 블록 타입 <strong>10종</strong>은 상수 모듈 한 곳에서만 정의합니다.
+        핵심 과제는 모델이 바뀌어도 같은 형태의 결과가 나오도록 <strong>LLM 출력 계약</strong>을 설계하는 일이었습니다.
       </p>
 
       <div class="impact-strip">
+        <div class="impact-cell">
+          <div class="impact-num">1명</div>
+          <div class="impact-desc">AI 에이전트 활용</div>
+        </div>
         <div class="impact-cell">
           <div class="impact-num">3계층</div>
           <div class="impact-desc">LLM 출력 방어 구조</div>
         </div>
         <div class="impact-cell">
-          <div class="impact-num">10종</div>
-          <div class="impact-desc">허용 블록 타입 단일 출처</div>
-        </div>
-        <div class="impact-cell">
           <div class="impact-num">5단계</div>
           <div class="impact-desc">제작 마법사 · 선행조건 검사</div>
-        </div>
-        <div class="impact-cell">
-          <div class="impact-num">0</div>
-          <div class="impact-desc">클라우드 저장 · 키 응답 반환</div>
         </div>
       </div>
 
@@ -1476,7 +1466,7 @@
         <div class="resp-content">
           <ul>
             <li>프롬프트 나열 대신 <strong>계약 파일 + JSON Schema + 검증 코드</strong>로 출력 규격 고정</li>
-            <li>1차: 엄격 스키마·structured output, 미지원 모델은 완화 모드 폴백 · 2차: 계약 규칙을 시스템 프롬프트 주입</li>
+            <li>1차: 엄격 스키마·structured output, 미지원 모델은 완화 모드 폴백<br>2차: 계약 규칙을 시스템 프롬프트 주입</li>
             <li>3차: 파싱 후 별칭 보정·빈 필드 복구 → 블록 검증 통과 여부로 최종 판정 · 실패 시 생성 거부</li>
             <li>허용 블록 타입은 상수 모듈 한 곳만 정의 · 모델별 오타·별칭은 코드가 아닌 <strong>계약 파일</strong>에 추가</li>
           </ul>

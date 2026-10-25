@@ -1,6 +1,7 @@
 # Log
 
 ## Log Index
+14. 2026-10-25 Part 03 impact-strip 3칸 통일
 13. 2026-10-25 GitHub Pages 푸시 배포 (빈틈·AutoBlog)
 12. 2026-10-25 Part 03 AutoBlog Studio 카드 추가
 11. 2026-10-25 빈틈도구 AgenticWorkflow 정본 정합·port 제거
@@ -16,6 +17,12 @@
 1. 2026-09-13 GitHub Pages 배포 준비
 
 ## Log Body
+
+14. 2026-10-25 Part 03 impact-strip 3칸 통일
+Purpose: LUA·빈틈·AutoBlog 소개 지표 3 cell, CSS grid 3열, AutoBlog 요약·LLM 줄바꿈
+Changes:
+- impact-strip repeat(3), 페이지 수·AI 우선 순서
+Changed files: publish/index.html, publish/styles-v2.css
 
 13. 2026-10-25 GitHub Pages 푸시 배포 (빈틈·AutoBlog)
 Purpose: Part 03 빈틈도구·AutoBlog Studio 변경사항 origin/main 푸시 및 Pages 배포

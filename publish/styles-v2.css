@@ -584,7 +584,7 @@ a.link:hover { text-decoration-thickness: 2px; }
 /* Impact strip (only for special projects like LUA) */
 .impact-strip {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 0;
   margin: 16px 0 20px;
   padding: 16px 20px;
