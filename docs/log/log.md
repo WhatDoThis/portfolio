@@ -1,6 +1,7 @@
 # Log
 
 ## Log Index
+13. 2026-10-25 GitHub Pages 푸시 배포 (빈틈·AutoBlog)
 12. 2026-10-25 Part 03 AutoBlog Studio 카드 추가
 11. 2026-10-25 빈틈도구 AgenticWorkflow 정본 정합·port 제거
 10. 2026-10-25 빈틈도구 FIG·본문 정합 (BINTEUM 제거, S/M/L)
@@ -15,6 +16,12 @@
 1. 2026-09-13 GitHub Pages 배포 준비
 
 ## Log Body
+
+13. 2026-10-25 GitHub Pages 푸시 배포 (빈틈·AutoBlog)
+Purpose: Part 03 빈틈도구·AutoBlog Studio 변경사항 origin/main 푸시 및 Pages 배포
+Changes:
+- commit 430c125 push main
+Changed files: (deploy only)
 
 12. 2026-10-25 Part 03 AutoBlog Studio 카드 추가
 Purpose: AutoBlog.md 기준 프로토타입·Portable ZIP·FIG.07·08·방법론 5번째 카드·서브 프로젝트 3
