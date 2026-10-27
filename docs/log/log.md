@@ -1,6 +1,7 @@
 # Log
 
 ## Log Index
+32. 2026-10-27 GitHub Pages 배포 (빈틈·AutoBlog 가독성·FIG 정렬)
 31. 2026-10-27 빈틈도구·AutoBlog 본문 가독성 개선 및 FIG 번호 정렬
 30. 2026-10-27 경력 타임라인 회사·개인 분리 및 개인 프로젝트 최신순 정렬
 29. 2026-10-27 프로젝트 제목 프로젝트명·부제 분리 전체 적용
@@ -34,6 +35,13 @@
 1. 2026-09-13 GitHub Pages 배포 준비
 
 ## Log Body
+
+32. 2026-10-27 GitHub Pages 배포 (빈틈·AutoBlog 가독성·FIG 정렬)
+Purpose: 데브에서 확인한 빈틈도구·AutoBlog 본문 수정을 main에 반영
+Changes:
+- 커밋 6992be2를 origin/main에 푸시
+- GitHub Actions Deploy GitHub Pages(40526368130) 성공
+Changed files: docs/log/log.md
 
 31. 2026-10-27 빈틈도구·AutoBlog 본문 가독성 개선 및 FIG 번호 정렬
 Purpose: 부정형 나열·내부 용어를 비개발자 문장으로 바꾸고, AutoBlog에도 단계별 에이전트 흐름을 추가
