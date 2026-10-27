@@ -953,7 +953,7 @@
             <path class="d-line" d="M 370 62 L 370 110" stroke-dasharray="3 3"></path>
           </g>
         </svg>
-        <div class="diagram-cap">FIG.02 — 차세대 테스트 버전: 프롬프트 임베딩 기반 2단계 가공 파이프라인 (검증 후 종결)</div>
+        <div class="diagram-cap">FIG.03 — 차세대 테스트 버전: 프롬프트 임베딩 기반 2단계 가공 파이프라인 (검증 후 종결)</div>
       </div>
 
       <div class="project-stack">
@@ -1048,11 +1048,11 @@
         <div class="resp-label">시스템 설계 · 아키텍처</div>
         <div class="resp-content">
           <ul>
-            <li>회원 가입·서버 DB·「서버에서 남의 입력으로 계산」 API 없음 — <strong>계산·입력은 사용자 브라우저</strong>에서만 처리</li>
-            <li>서버 역할은 <strong>페이지 조회수(경로별)</strong>, 정적 파일 전달, 검색·공유용 메타정보(SEO)로 한정</li>
+            <li><strong>모든 계산은 사용자 브라우저</strong>에서 처리 — 생년월일·정산 금액 같은 입력값을 서버로 보내지 않음</li>
+            <li>서버는 페이지 전달과 검색·공유용 정보(SEO)만 담당 — 서버에 저장하는 데이터는 <strong>도구별 조회수뿐</strong></li>
             <li>입력값·설정은 브라우저 저장소에 두고, 도구끼리는 <strong>읽기 전용</strong>으로만 공유 — 한 기능 수정이 다른 기능을 깨지 않게 모듈을 분리</li>
-            <li>홈·달력 허브와 연휴·퇴사·생활·유틸 등 <strong>도구마다 전용 URL</strong> — 페이지 하나가 「계산 + 설명 + 검색 노출」 묶음</li>
-            <li>공공데이터·광고 등 외부 연동이 없거나 실패하면 <strong>해당 기능만 줄이고</strong> 전체 서비스는 유지</li>
+            <li><strong>도구마다 독립된 페이지 주소</strong>(연휴·퇴사 계산 등) — 한 페이지에 계산기·사용 설명·검색용 정보를 함께 담아, 도구 하나하나가 검색 결과에 따로 노출되도록 구성</li>
+            <li>공휴일 같은 공공데이터는 실시간으로 부르지 않고 <strong>주 1회 미리 받아 배포본에 반영</strong> · 광고 등 외부 요소가 실패해도 그 영역만 빠지고 서비스는 유지</li>
           </ul>
         </div>
 
@@ -1060,7 +1060,15 @@
         <div class="resp-content">
           <ul>
             <li>작업마다 규모 <strong>S/M/L</strong>을 정함 — 작은 수정 / 기능 하나 / 화면·구조를 넓게 바꿀 때마다 <strong>자동 검사·테스트 범위</strong>만 달라짐</li>
-            <li><strong>5가지 AI 역할:</strong> (1) 블랙박스 — PC·모바일에서 실제 화면 체험·평가, 코드는 건드리지 않음 (2) 오케스트레이터 — 어떤 에이전트를 쓸지, 사용자 동선 커버리지 점검 (3) 코드 검증 — 배포 전 자동 품질·빌드 검사 (4) 구현 — 기능 반영 후 「지금 배포된 동작」 문서 갱신 (5) 문서 — 변경 기록·규칙 유지</li>
+            <li><strong>5가지 AI 역할</strong> — 역할마다 맡는 범위를 나눠 서로의 일을 침범하지 않게 운영
+              <ul>
+                <li><strong>블랙박스</strong> — PC·모바일에서 실제 화면을 써 보며 사용감 평가 (코드는 수정하지 않음)</li>
+                <li><strong>오케스트레이터</strong> — 어떤 에이전트를 쓸지 정하고, 사용자 동선이 빠짐없이 점검됐는지 확인</li>
+                <li><strong>코드 검증</strong> — 배포 전 자동 품질·테스트·빌드 검사</li>
+                <li><strong>구현</strong> — 기능을 반영하고 「지금 배포된 동작」 문서를 갱신</li>
+                <li><strong>문서</strong> — 변경 기록과 에이전트 규칙 유지</li>
+              </ul>
+            </li>
             <li>화면·사용감(UX) 작업은 블랙박스·동선 검증을 거치고, 「끝났다」는 판단은 <strong>자동 테스트 통과 + 작업 로그(명령·결과)</strong>가 남을 때만</li>
           </ul>
         </div>
@@ -1080,7 +1088,7 @@
         <div class="resp-content">
           <ul>
             <li>운영 도메인 <strong>binteumtool.com</strong>, Cloudflare Workers 배포, 과도한 요청 <strong>Rate Limiting</strong></li>
-            <li>GitHub Actions로 검사 통과 시 배포 · 공휴일·기준 데이터는 <strong>서버 주간 배치</strong>로 갱신(사용자 브라우저에서 직접 긁지 않음)</li>
+            <li>GitHub Actions에서 검사를 통과해야 배포 · 공휴일 데이터 주간 갱신도 같은 Actions 작업으로 처리</li>
           </ul>
         </div>
       </div>
@@ -1146,7 +1154,7 @@
             <text class="d-dim" x="16" y="28" font-size="8">에이전트 산출 → blackbox·path(UX) → CI → Git → Workers → 헤더·버전 → publish/log</text>
           </g>
         </svg>
-        <div class="diagram-cap">FIG.05 — 계약·as-built부터 binteumtool.com·헤더 확인까지 순환</div>
+        <div class="diagram-cap">FIG.04 — 계약·as-built부터 binteumtool.com·헤더 확인까지 순환</div>
       </div>
 
       <div class="diagram">
@@ -1237,7 +1245,7 @@
             <text class="d-dim" x="16" y="34" font-size="10">blackbox · publish/log · path coverage — 체크리스트·PR (blackbox 단독 merge 차단 아님)</text>
           </g>
         </svg>
-        <div class="diagram-cap">FIG.06 — S/M/L × 5역할(하단=시간순·CI 게이트=lint·test·build)</div>
+        <div class="diagram-cap">FIG.05 — S/M/L × 5역할(하단=시간순·CI 게이트=lint·test·build)</div>
       </div>
 
       <div class="project-stack">
@@ -1302,14 +1310,14 @@
           <ul>
             <li>프롬프트 나열 대신 <strong>계약 JSON + Schema + 검증 코드</strong>로 OpenRouter structured output 규격 고정</li>
             <li>Schema → 계약 규칙 주입 → 보정·블록 검증·<strong>가드레일</strong>; <strong>검증 통과분만 저장</strong>, 주제·블록 형식 위반은 재시도·거부(일부 초안 경로는 skeleton fallback)</li>
-            <li>허용 블록 <strong>10종</strong>은 코드 한 곳에서만 정의, 모델별 별칭은 <strong>계약 파일</strong>에 추가 — 상세는 FIG.07</li>
+            <li>초안은 소제목·문단·이미지 같은 <strong>블록 단위</strong>로 생성 — 쓸 수 있는 블록 종류(10가지)는 코드 한 곳에서만 정의하고, 모델이 다른 이름을 쓰면 <strong>계약 파일</strong>의 별칭 표로 맞춤 — 상세는 FIG.06</li>
           </ul>
         </div>
 
         <div class="resp-label">주제·키워드 체인</div>
         <div class="resp-content">
           <ul>
-            <li>단일 LLM 호출이 아님 — <strong>게시판 글 목록(인덱스)</strong> 갱신 → 수집 게이트 → 스타일 재학습 → 주제 제안 → 규칙 검증(FIG.08)</li>
+            <li>단일 LLM 호출이 아님 — <strong>게시판 글 목록(인덱스)</strong> 갱신 → 수집 게이트 → 스타일 재학습 → 주제 제안 → 규칙 검증(FIG.07)</li>
             <li>공개 글 0건이면 수동 주제; 기존 제목 <strong>반복 틀</strong>·토큰 중복·홍보형 제목은 거부 후 재시도</li>
             <li>설정된 게시판 데이터만으로 맥락 구성 — 특정 블로그 하드코딩 없음</li>
           </ul>
@@ -1324,12 +1332,25 @@
           </ul>
         </div>
 
-        <div class="resp-label">배포·검증·에이전트</div>
+        <div class="resp-label">에이전틱 워크플로</div>
+        <div class="resp-content">
+          <p style="margin:0 0 8px; font-size:14px; line-height:1.6; color:var(--fg-1);">
+            작업 지시를 대화가 아니라 <strong>저장소 규칙 파일(항상 적용)</strong>로 고정해, 기능 하나를 바꿀 때마다 같은 순서로 진행합니다.
+          </p>
+          <ol>
+            <li><strong>선독</strong> — 관련 코드와 「지금 동작」 문서(As-Built)를 먼저 읽고 원인·빠진 부분을 요약</li>
+            <li><strong>자체 제안</strong> — 요청 항목만 옮기지 않고, 에이전트가 개선안 2건 이상을 먼저 제시</li>
+            <li><strong>채택 판정</strong> — 새 규칙·LLM 단계는 효과·비용·데이터·정합 4항목(각 1~5점)으로 채점, 효과 4점 이상·합계 14점 이상만 채택하고 미달은 보류로 기록</li>
+            <li><strong>구현 → 검증</strong> — 검증 명령(agentic-verify)이 통과해야만 완료로 인정</li>
+            <li><strong>문서 갱신</strong> — As-Built 문서의 해당 절만 현재 동작 기준으로 갱신 (변경 이력은 쓰지 않음)</li>
+          </ol>
+        </div>
+
+        <div class="resp-label">배포 · 검증</div>
         <div class="resp-content">
           <ul>
             <li>Windows <strong>AutoBlog.cmd</strong> 한 번으로 PowerShell 부트스트랩(venv·의존성) 후 로컬 서버 기동 · <strong>Portable ZIP</strong>(slim/fat), ZIP에 DB·키·사용자 산출물 미포함</li>
-            <li>검증 CLI <strong>agentic-verify</strong>(헬스·계약·방어 스모크·pytest 일부) — 기능 변경 시 통과를 완료 게이트</li>
-            <li>Cursor Rules(alwaysApply), As-Built 선독 · 자체 제안 2건+ · 도입 점수표(효과 4+ &amp; 합 14+)</li>
+            <li>검증 명령 <strong>agentic-verify</strong> — 헬스 체크 · 계약 파일 · 출력 방어 스모크 · 테스트 일부를 한 번에 실행</li>
           </ul>
         </div>
       </div>
@@ -1383,7 +1404,7 @@
           <text class="d-dim" x="580" y="60" font-size="10">블록 10종</text>
           <text class="d-dim" x="580" y="76" font-size="10">단일 정의</text>
         </svg>
-        <div class="diagram-cap">FIG.07 — LLM 3계층(Schema·계약·검증·가드레일 · 통과분 저장)</div>
+        <div class="diagram-cap">FIG.06 — LLM 3계층(Schema·계약·검증·가드레일 · 통과분 저장)</div>
       </div>
 
       <div class="diagram">
@@ -1432,7 +1453,7 @@
           <text class="d-dim" x="580" y="58" font-size="10">형식·중복 위반</text>
           <text class="d-dim" x="580" y="72" font-size="10">→ 주제 제안 재시도</text>
         </svg>
-        <div class="diagram-cap">FIG.08 — 게시판 글 목록→주제 체인(0건·규칙 위반 시 재시도)</div>
+        <div class="diagram-cap">FIG.07 — 게시판 글 목록→주제 체인(0건·규칙 위반 시 재시도)</div>
       </div>
 
       <div class="project-stack">
@@ -1614,7 +1635,7 @@
             <text class="d-dim" x="16" y="34" font-size="10">의사결정을 Phase 전환 승인으로 단일화하여 개발 속도 확보</text>
           </g>
         </svg>
-        <div class="diagram-cap">FIG.04 — AI 에이전트 오케스트레이션 (수평 Phase × 기능별 에이전트 역할)</div>
+        <div class="diagram-cap">FIG.08 — AI 에이전트 오케스트레이션 (수평 Phase × 기능별 에이전트 역할)</div>
       </div>
 
       <div class="project-stack">
