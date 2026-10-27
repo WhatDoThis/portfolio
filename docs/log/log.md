@@ -1,6 +1,7 @@
 # Log
 
 ## Log Index
+29. 2026-10-27 프로젝트 제목 프로젝트명·부제 분리 전체 적용
 28. 2026-10-25 AutoBlog Studio 제목·배포 표기 수정
 27. 2026-10-25 Part 03 project-head 2행 레이아웃
 26. 2026-10-25 GitHub Pages 배포 (Part 03 통일·AutoBlog As-Built)
@@ -31,6 +32,13 @@
 1. 2026-09-13 GitHub Pages 배포 준비
 
 ## Log Body
+
+29. 2026-10-27 프로젝트 제목 프로젝트명·부제 분리 전체 적용
+Purpose: AutoBlog에 적용한 제목 형식(— 제거, 부제 축소)을 나머지 프로젝트 제목에도 맞춤
+Changes:
+- ACC BI Report, ACC BI Assistant, LUA, 빈틈도구 제목을 프로젝트명 + 작은 부제로 분리
+- AutoBlog 배포 안내의 라벨 뒤 공백 정리
+Changed files: publish/index.html
 
 28. 2026-10-25 AutoBlog Studio 제목·배포 표기 수정
 Purpose: 제목 줄바꿈 왜곡 완화 및 배포 안내 문구 정리
